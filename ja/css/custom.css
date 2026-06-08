@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'k8x12S';
+  src: url('/fonts/k8x12S.woff2') format('woff2'),
+      url('/fonts/k8x12S.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;}
+  .k8x12s {font-family:'k8x12S'}
+@font-face {
+  font-family: 'MisakiGothic2nd';
+  src: url('/fonts/MisakiGothic2nd.woff2') format('woff2'),
+      url('/fonts/MisakiGothic2nd.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;}
+  .misakigothic {font-family:'MisakiGothic2nd'}
+@font-face {
+  font-family: 'OfficalEmotes';
+  src: url('/fonts/OfficalEmotes.woff2') format('woff2'),
+      url('/fonts/OfficalEmotes.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;}
+  .officalemotes {font-family:'OfficalEmotes'}
+
+:root{
+  --orange1:#fdac09;
+  --orange2:#ff8800;
+  --blue:#4c8eff;
+  --lightblue:#def5ff;
+}
+
+body {background-image: url(/ja/img/ruler.png);
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: repeat-y;
+  image-rendering: pixelated;
+  -webkit-text-size-adjust: 100%;
+  > * {image-rendering:initial;}}
+
+p{display: block;
+  margin-top: 1em; margin-bottom: 1em;
+  &:first-child{margin-top:0}
+  &:last-child{margin-bottom:0} }
+
+h3:first-child{margin-top:0}
+
+s, u{text-decoration-thickness: 1px;}
+
+nav i {position:absolute;
+  top:10px; right:7px;
+  text-shadow:none;}
+nav span i {position:absolute;
+  top:10px; right:23px;
+  text-shadow:none;}
+.pixelimg{image-rendering: pixelated;}
+.regimg{image-rendering: initial}
+
+ol{padding-left:20px;
+  list-style-type:decimal-leading-zero;
+  > li{list-style-type:decimal-leading-zero;} }
+
+#rightcolumn{
+  ul{padding-left:20px; list-style-type:disc;
+    margin-top:5px; margin-bottom:5px;
+    &:first-child{margin-top:0}
+    &:last-child{margin-bottom:0} }
+  li{list-style-type:disc; margin-top: 5px;
+    &:first-child{margin-top:0}
+    > ul{margin-top:5px !important; margin-bottom:5px !important}}
+}
+
+img {max-width:100%;height:auto}
+div.img {display: flex;
+  align-items: center;
+  justify-content: space-evenly;}
+
+.twitter-tweet p{text-indent:initial; text-align:center;}
+.twitter-tweet-rendered{margin-right:auto; margin-left:auto}
+
+sup{font-size:x-small;}
+.small, small{font-size:0.85em}
+
+table{table-layout:fixed;
+  padding:5px;
+  border:1px solid var(--black);
+  border-collapse:collapse;
+  th{padding:5px;
+    border:1px solid var(--black);
+    background:#e5e5e5;
+  	vertical-align:middle}
+  td{padding:5px;
+    border:1px solid var(--black);
+    background:#ffffff;
+    vertical-align:middle;
+    hr{margin:3px 0;} }
+}
+
+.temp-y{color:var(--red)}
+
+mark{background:var(--red);
+ color:#fff;
+ padding:1px 5px}
+.big{padding:5px 15px;}
+
+#contents mark > a {color:#ffffff}
+
+span.textbox{text-align:inherit;}
+
+ul.rkgk li:first-child{margin-top:5px !important}
+
+.cat img, img.cat {
+  vertical-align:middle;
+  margin-top: -4px;
+  margin-left: 1px;
+  image-rendering:pixelated;}
+details.cat, .cat details, .cat summary {
+  list-style:none;
+  display:inline;}
+details.cat>img, .cat details>img {margin-left:1px}
+.cat details div, div.cat,
+.cat details span, span.cat {
+  font-family: 'k8x12S';
+  display:inline-block;
+  color: var(--red);
+  font-size: 11px;
+  border: 1px var(--red) solid;
+  border-radius: 3px;
+  line-height: 0.5;
+  padding: 2px;
+  padding-bottom: 4px;
+  transform: translateY(-2px);
+  margin-left: 1px;}
+.cat2 details div, div.cat2,
+.cat2 details span, span.cat2 {
+  font-family: 'OfficalEmotes', 'MisakiGothic2nd';
+  display:inline-block;
+  color: var(--red);
+  font-size: 8px;
+  border: 1px var(--red) solid;
+  border-radius: 3px;
+  line-height: 0.5;
+  padding: 3px 2px 5px 2px;
+  transform: translateY(-1px);
+  margin-left: 1px;}
+.cat-g details div, div.cat-g {color: #00A97A; border: 1px #00A97A solid;}
+.cat-b details div, div.cat-b {color: #4152FF; border: 1px #4152FF solid;}
+
+.new::after{
+	content: url(/img/icon/new.gif);
+  margin-left: 3px;
+  image-rendering:pixelated;}
+a.up::before{
+	content: url(/img/icon/up.gif);
+  margin-right: 3px;
+  image-rendering:pixelated;}
+
+summary {cursor:pointer; text-indent:2px}
+
+details.tri[open], .tri details[open]{float:left}
+.tri summary {float: left;
+  margin-right: 5px;
+  margin-top: -2px;
+  margin-bottom: -2px;}
+
+div.sp {text-align:center;}
+.sp img, p.sp {border: 2px solid var(--red)}
+p.sp {padding:8px; width:max-content}
+
+#r18-hidden {display: none;}
+
+.buttonwall{display:flex; flex-flow: row wrap; align-items:center;
+  > *{display:inline-block;
+    margin:0 5px 5px 0;
+    text-decoration:none !important;
+    line-height:0;
+    padding-bottom:1.5px} }
+.nobanner{display:table-cell;
+  min-width:88px; height:31px;
+  border:dashed var(--black) 1px; color:var(--black);
+  font-size:8px; line-height:1.25;
+  font-family:'OfficalEmotes','MisakiGothic2nd';
+  text-align: center;
+  vertical-align: middle;
+  text-decoration:none !important}
+.b200{width:200px;height:40px;}
+.b88{width:88px;height:31px;}
+.b40auto{height:40px; width:fit-content; padding:0 15px}
+
+.flash {filter: grayscale(1) contrast(0.3);
+  -webkit-filter: grayscale(1) contrast(0.3);}
+.bw {filter: grayscale(1);
+  -webkit-filter: grayscale(1)}
+.flash:hover, .bw:hover {filter: none;
+  -webkit-filter: none;}
+
+.annt{cursor:help;
+  text-decoration:underline dotted 1px}
+
+button{
+  color:#FFF;
+  font:inherit;
+  background:var(--blue);
+  border:none;
+  border-radius:5px;
+  padding:2px 6px;
+  &:hover{color:var(--black);
+  background:var(--grey1)}
+  &:active{opacity:0.5} }
+
+.updates{overflow-y:auto;
+  background:#FFF;
+  border:solid 1px var(--black);
+  padding:3px;
+  height:150px;
+  width:100%;
+  resize:both;
+  &.short{height:100px}
+  hr{margin:0.5em 0} }
+
+.bgred{background:var(--red)}
+  .red{color:var(--red)}
+.bgorange{background:var(--orange1)}
+  .orange{color:var(--orange2)}
+.bgblue{background:var(--blue)}
+  .blue{color:var(--blue)}
+.bglightblue{background:var(--lightblue)}
+  .lightblue{color:var(--lightblue)}
+.bgblack{background:var(--black)}
+  .black{color:var(--black)}
+.bgwhite{background:#FFF}
+  .white{color:#FFF}
+
+footer::before{content:"©cerealandchoccymilk 2022–2026"} /* change every year */
+
+@media screen and (max-width:600px){
+  #leftcolumn .updates{background:none}
+}

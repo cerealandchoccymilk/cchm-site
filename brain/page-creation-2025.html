@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My page creation workflow</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="wrapper">
+  <header><h1><a href="/en">cereal and choccy milk</a></h1><div id="open"><span id="open-icon"></span></div></header>
+  <div id="content"><breadcrumb id="top"><a href="/">top</a> > <a href="/en">en</a> > </breadcrumb><main>
+
+
+<article>
+<h2>My page creation workflow</h2>
+<p>I think I've basically perfected my workflow for writing pages for this site, so I've decided to share it.<br>
+   Of course, this is just what feels the most convenient and efficient for myself, so it may not be the best choice for everyone. But if you're struggling with motivation, visualization of site layout, etc, this may be good to try out.
+
+<section id="01">
+<h3>Step 1: Drafting</h3>
+<div class='ln01'>
+<p>Before, I would often just go ahead and create a page, and think of and write the content directly in the Neocities editor. I found it a bit hard to focus solely on what I wanted to write, as I would start mess around too much with formatting (links, text decorations, line breaks, indents, etc.).<br>
+   This is what I do now:
+</div>
+<p>I draft nearly all of my pages in a program called Notion. The visuals and toolset are similar to HTML, so it is very suited for page-writing (you can even directly publish pages through Notion, as I do with my translations). It also has a mobile app, so I can write on the go.
+<details><summary>(Further rambling about Notion)</summary>
+  <div class='ln01'>
+  <p>Your device's built-in notes app is also alright, but I find Notion the most versatile in terms of sorting pages, easy formatting and layout, navigation within a long  page, etc. while also minimizing UI visual clutter and headaches (side-eyeing Google Docs). Being able to rearrange text blocks is a real life-saver!<br>
+     I also use Notion for college lecture notes, notably in class formats where outlines (I.A.1.a.) are involved.
+  <p>The one single issue I have with it is that it automatically converts apostrophes, quotation marks, and ellipses, with no way to turn it off. ("→”) ('→’) (...→…)<br>
+     I've taken classes on typography so I understand that these <i>are</i> the correct glyphs, but it does get in the way when I want to write for my site, especially when I want to take note of HTML tags I plan to use.<br>
+     I write in all-lowercase half of the time anyways! I don't care for "correctness!"
+   </div>
+</details>
+<p>For big pages (such as when I write for the Bog or Brain), I just write the complete post as a page on Notion, so that all I have to do left is copy-paste to Neocities and tweak the formatting.<br>
+   However, for special pages without big paragraphs, I sometimes just write a vague outline. For example, the outline for the new <a href='/go'>portal page</a> was:
+<div class='ln02'>
+  <p><b>cereal and choccy milk</b>
+  <p>Entrance　入り口
+  <p>&lt;a href='/'&gt;ENGLISH (main site)&lt;/a&gt;
+  <p>&lt;a href='/ja'&gt;JAPANESE (中庭 / Courtyard)&lt;/a&gt;
+  <p>&lt;a href='/ja/kirby'&gt;「ちょき」(@spheredotorb)の星kb二次創作を見に来た方はこちら&lt;/a&gt;
+   </div>
+<p>In cases like these, I feel the need to have a visual of the finished CSS formatting to go any further. I will flesh out the contents in the next step.
+</section>
+
+<section id="02">
+<h3>Step 2: Inspect element!</h3>
+<p>You will need a computer to do this (unless there's some hidden way to inspect on mobile).<br>
+   I use Firefox, so if you use a different browser <s>you should ditch that and start using Firefox</s> some menu functions may be named differently.
+<p>I open a browser tab of a new blank/template page of my site, or an existing page with the same layout.<br>
+   Using the Inspect element function (usually F12, or right-click and select "Inspect"), I will then find the &lt;body&gt; or &lt;div&gt; of where the content should go, and choose "Edit as HTML" in the right-click menu. <br>
+   In this text editor, I will paste the contents of my Notion page.
+<p>IIRC the default view is "dock to bottom," but I personally use the "separate window" view so the page I'm editing is a normal size. "Responsive design mode" (the phone/tablet icon) allows quick resizing to common phone/tablet sizes and is also helpful.
+<div class='img'>
+  <img src='img/page-creation-2025-1.png' width='400'>
+  <img src='img/page-creation-2025-2.png' width='250'>
+</div>
+<p>For long, nearly-complete pages, I sometimes paste it into Neocities first and then Inspect the page. This order doesn't make much of a difference.
+<p>I will now make any changes I need directly in the Inspect element window.
+<div class='img'><img src='img/page-creation-2025-3.png' width='600'></div>
+<p>I'm not sure how many people use this method, but there are a few advantages:
+<ul>
+<li>It gives you an immediate visual of the finished product. It's like a combination of WSYWIG and hand-coded HTML/CSS.
+<li>It drastically reduces internet and power usage. Instead of needing to save the Neocities editor and reloading the page every time you want to check a change, it's all done directly on one browser tab, no reloading needed.<br>
+    In fact, you shouldn't reload at all until after the next step since you might lose your progress.
+<li>You can edit both HTML and CSS at once. It is very easy to experiment with formatting and create new style rules if needed.<br>
+    Edited CSS attributes are highlighted so it's relatively easy to find the parts you have to copy onto your site's style.css. If I'm worried of losing track, I can always screenshot the parts of CSS code that I changed.
+</ul>
+<div class='img'><img src='img/page-creation-2025-4.png' width='400'></div>
+</section>
+
+<section id="03">
+<h3>Step 3: Paste the final product to Neocities</h3>
+<p>Once everything looks the way I want it to look on my browser, I will transfer the contents to Neocities to get it online. 
+<p>Using the "Edit as HTML" function again, I copy and paste the code onto the Neocities editor. If you made any CSS changes, remember to copy-paste those too.<br>
+   When you check the online version of your page, be sure to open it in a new tab instead of closing or reloading your Step 2 tab, so you can compare the two and check if you missed anything.
+<p>Important note that you will need to be careful with any parts of your site that is generated with JavaScript. It's good to go div-by-div (or however you subdivide your page), instead of copying the entire &lt;body&gt; at once.
+<p>After a hard refresh (cmd/ctrl + shift + R) and a final check of the online page, you're done! You've now crafted a webpage the way Choccy does it.
+<hr>
+<p>If you have any questions or comments, feel free to contact my guestbook, Neocities profile, or email about it!<br>
+   Do you use Inspect element like this? If you tried this method out, how did it work out for you?
+</section>
+
+</article>
+
+
+    </main><footer></footer></div>
+    <div id="side-bg"></div>
+<aside>
+    <h2 class="menu">Menu</h2><div class="menu"></div>
+  <h2 class="h2top">Updates</h2>
+  <div class="updates short">
+    2025.06.22 - Posted
+  </div>
+  <h2>Page navigation</h2>
+  <menu>
+  <li><a href='#top'>Top</a>
+  <li><a href='#01'>Step 1: Drafting</a>
+  <li><a href='#02'>Step 2: Inspect element</a>
+  <li><a href='#03'>Step 3: Paste to Neocities</a>
+  </menu>
+  <h2>Related pages</h2>
+  <menu>
+  <li><a href='/'>Top (portal) page</a>
+  </menu>
+  <div class='img pixelimg'><img src='/collections/blinkies/freepalestine.gif' width='150'></div>
+</aside>
+
+<nav><h2>Menu</h2><div class="menu"></div>
+  <h2>Link</h2><div class='img pixelimg'><img src='https://file.garden/ZbpUQD2lT2-4iaij/choccy200.gif' width='200'></div>
+  <p><b>Site:</b> cereal and choccy milk<br>
+    <b>Webmaster:</b> Choccy<br>
+    <a href='/en#links'>Banner URLs here</a></nav>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/js/jquery.toggle.js"></script>
+<script src="/js/jquery.breadcrumb.js"></script>
+<script>$("div.menu").load("/menu.html");</script>
+</body>
+</html>

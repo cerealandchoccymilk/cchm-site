@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Kiwi+Maru:wght@300;400;500&display=swap');
+@font-face {
+  font-family: 'k8x12S';
+  src: url('/fonts/k8x12S.woff2') format('woff2'),
+      url('/fonts/k8x12S.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;}
+  .k8x12s {font-family:'k8x12S'}
+@font-face {
+  font-family: 'MisakiGothic2nd';
+  src: url('/fonts/MisakiGothic2nd.woff2') format('woff2'),
+      url('/fonts/MisakiGothic2nd.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;}
+  .misakigothic {font-family:'MisakiGothic2nd'}
+@font-face {
+  font-family: 'OfficalEmotes';
+  src: url('/fonts/OfficalEmotes.woff2') format('woff2'),
+      url('/fonts/OfficalEmotes.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;}
+  .officalemotes {font-family:'OfficalEmotes'}
+
+/* ブラウザスタイルの初期化 */
+/*!
+ * Template: 16-rose v1.0.0 (https://klee.mypace.net/)
+ * Copyright 2014 klee
+ * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
+ */
+/* ブラウザスタイルの初期化 */
+*{margin: 0;
+	padding: 0;
+	background-color: transparent;}
+@media(prefers-reduced-motion:no-preference){
+  *{scroll-behavior:smooth}
+  html{interpolate-size:allow-keywords}
+}
+
+/* 背景 */
+body{
+  background-color: #f6f3f1;
+	font-size: 13px;
+	font-family: 'Segoe UI','游ゴシック Medium','Yu Gothic Medium','游ゴシック体',YuGothic,'Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif; /*"メイリオ","ヒラギノ角ゴ Pro W3", "Osaka", "ＭＳ Ｐゴシック",sans-serif;*/
+	line-height:1.5;
+	color: #666;
+  -webkit-text-size-adjust: 100%;
+	margin: 15px;
+	}
+body.bg{
+  background: #f6f3f1 url(/ja/img/rose-bg.gif) repeat-x left bottom;
+  padding: 0 0 60px;}
+
+/* 骨組み */
+.container{
+  margin: 0 auto;
+	padding: 0;
+	max-width: 700px;}
+.gallery{max-width: 1000px;}
+#menu{margin: 10px;}
+
+/* ヘッダー */
+#header{
+  width: 600px;
+	text-align: right;
+	margin: 40px auto;}
+#topimg{
+  width: 600px;
+	height: 300px;
+	background: url(/ja/img/rose-test.jpg);
+	position: relative;
+	border: 10px solid #fff;}
+.rose{
+  position: absolute;
+	top: 260px;
+	left: -65px;}
+/* サイトタイトル */
+h1, h1 a:link, h1 a:visited{
+	font-family: 'Delius', 'Kiwi Maru', cursive;
+	margin: 0 0 10px;
+	font-weight: normal;
+	font-size: xx-large;
+	text-align: right;}
+/* メニュー */
+ul#topmenu a{
+	font-family: 'Delius', 'Kiwi Maru', cursive;
+	font-size: 16px;}
+ul#topmenu li{
+	display: inline-block;
+	padding-left: 20px;
+	margin: 20px 0 0;}
+/* メールフォーム */
+textarea{
+	width: 80%;
+	padding: 4px;
+	overflow:auto;}
+input{padding: 3px 5px;}
+input.name{margin-bottom: 10px;}
+textarea,input{
+	border: none;
+	background-color: #ffe4e1;}
+.bottom{vertical-align: bottom;}
+
+/* コンテンツ */
+.content{margin-bottom: 35px;}
+ul.text, ul.text li{list-style: none;}
+ul.text li::before{
+  content: " ";
+  background: url(/ja/img/rose-arrows.png) no-repeat;
+  image-rendering: pixelated;
+  float: left;
+  height: 5px;
+  width: 7px;
+  margin: 7px 4px 0 0;}
+ul.text ul{padding-left:10px}
+
+ul.illustlist{margin: 0 10px;}
+ul.illustlist li{display: inline;}
+.illust{
+	text-align: center;
+	margin: 40px auto;
+  max-width: 700px;}
+dl.comic{margin: 0 10px 10px;}
+dl.comic dd{
+	border-left: 1px dotted #666;
+	margin: 0 5px;
+	padding-left: 10px;}
+hr{
+	border: none;
+	border-bottom: 1px solid #fff;
+	margin: 10px 0;}
+.caution{
+	width: 500px; margin: 30px auto;
+	font-size: 11.5px;
+	background-image: url(/ja/img/rose-left.gif),url(/ja/img/rose-right.gif);
+	background-position: left 50%,right 50%;
+	background-repeat:no-repeat,no-repeat;}
+
+/* ページリンク */
+#footer{
+	border-top: 2px solid #fff;
+	text-align: center;
+	margin: 20px auto;
+	padding: 20px}
+#footer ul{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width:600px;
+	margin:auto}
+#footer li{
+	display: block;}
+
+/* リンクページ */
+.link-bn{margin: 10px 0;}
+.link-bn dd{
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-left: 3px dotted #ea5550;}
+.link-text a{margin-right: 1em;}
+.link-inline {padding-left: 0;}
+.link-inline li{
+  display: inline;
+  margin-right: 10px;}
+
+/* 見出しなど */
+h2{
+  font-family: 'Delius', 'Kiwi Maru', 'Segoe UI', cursive;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 15px 0 5px;}
+h2:first-letter, h2>span{
+  font-family: 'Delius', 'Kiwi Maru', 'Segoe UI', cursive;
+  color: #ea5550;
+  font-size:16px;
+	font-weight: normal;}
+h3{
+	margin: 5px 0;
+	font-size: 13px;
+	line-height: 29px;
+	padding-left: 30px;
+  font-weight: bold;
+	background: url(/ja/img/rose-h3.gif) left 50% no-repeat;}
+strong{color: #ea5550;}
+em{
+	font-style: normal;
+	background: rgba(255,228,225,0.9);}
+.box{
+	background: #fff;
+	border-radius:10px;
+	padding: 15px;
+	margin: 10px auto;}
+
+/* リンク設定 */
+a{
+  text-decoration: none;
+	color: #ea5550;}
+a:hover,
+a:active{background: rgba(255,228,225,0.9);}
+
+/* 著作権表示 */
+#copy{
+	margin: 20px 0 10px;
+	text-align: center;
+	font-size: 9pt;}
+#copy,#copy a{
+	font-size: 9pt;
+	text-decoration: none;}
+
+
+
+
+
+p {
+  margin:1em auto;
+  max-width:700px;}
+img {max-width:100%}
+.illust img {
+  max-width:100%;
+  max-height:700px;}
+.illust ul{
+  list-style: none;
+  max-width:700px;
+  margin:auto;}
+.illust ul li::before :not(rkgk){
+  content: " ";
+  background: url(/ja/img/rose-arrows.png) no-repeat;
+  image-rendering: pixelated;
+  float: left;
+  height: 5px;
+  width: 7px;
+  margin: 7px 4px 0 0;}
+.illust details{max-width:700px;margin:auto;}
+.narrow p, p.narrow, .narrow details, details.narrow, .box.narrow {max-width:550px}
+
+.left {text-align:left;}
+
+.box p:first-child{margin-top:0}
+.box p:last-child{margin-bottom:0}
+
+a.new::before{
+	content: url(/img/icon/new.gif);
+  margin-right: 3px;
+  image-rendering: pixelated;}
+a.up::before{
+	content: url(/img/icon/up.gif);
+  margin-right: 3px;
+  image-rendering: pixelated;}
+.more.new::after{
+	content: url(/img/icon/new.gif);
+  margin-left: 3px;
+  image-rendering: pixelated;}
+.more.up::after{
+	content: url(/img/icon/up.gif);
+  margin-left: 3px;
+  image-rendering: pixelated;}
+
+.cat img, img.cat {
+  vertical-align:middle;
+  margin-top: -3px;
+  margin-left: 1px;
+  image-rendering: pixelated;}
+
+summary {cursor:pointer;}
+.cat summary {list-style:none}
+details.cat, .cat details {
+  display:inline-flex;
+  list-style:none}
+details.cat>img, .cat details>img {margin-left:1px}
+
+.cat details div, div.cat {
+  font-family: 'k8x12S';
+  display:inline-flex;
+  color: #ea5550;
+  font-size: 11px;
+  border: 1px #ea5550 solid;
+  border-radius: 3px;
+  line-height: 0.5;
+  padding: 2px;
+  padding-bottom: 4px;
+  transform: translateY(-2px);
+  margin-left: 1px;
+  }
+.gift div {
+  font-family: 'OfficalEmotes', 'MisakiGothic2nd';
+  display:inline-block;
+  color: #277033;
+  font-size: 8px;
+  border: 1px #277033 solid;
+  border-radius: 3px;
+  line-height: 0.5;
+  padding: 3px 2px 5px 2px;
+  transform: translateY(-1px);
+  margin-left: 1px;}
+
+
+summary.more {
+  list-style:none;
+  display:block;
+  background:#fff;
+	border-radius:10px;
+	padding: 4px;
+	margin: 5px auto;
+	max-width: 500px;
+  text-align:center;}
+summary.more:hover, details.more:hover {background: rgba(255,228,225,0.9);}
+
+details.more{
+  display:block;
+	background: #fff;
+	border-radius:10px;
+	padding: 10px;
+	max-width: 500px;
+	margin: 10px auto;}
+details.more > summary {list-style:none;}
+summary > h3 {margin:0;}
+details.key p {
+  margin:5px 0 0 0;
+  font-size:11px}
+
+div.updates {
+  background: #fff;
+	border-radius:10px;
+	padding: 4px;
+	margin: 40px auto;
+	max-width: 450px;
+	text-align: center;}
+.updates span {color:#ea5550}
+
+.twitter-tweet-rendered{margin:auto;}
+
+.illust h3 {
+  display:inline-block;
+  margin:0;}
+#r18-hidden {display: none;}
+#prompt {
+  text-align: center;
+  margin: 40px auto 60px;}
+#prompt h3 {
+  display:inline-block;
+  color: #ea5550;
+  margin:0;}
+
+button {
+  border-width: 2px;
+  border-radius: 4px;
+  border-color: black;
+  color: #666;
+  background: white;
+  padding: 2px 3px;}
+
+.grid-2col {display:grid; grid-template-columns:49% 49%; column-gap:10px;}
+.col-2 {column-count:2; column-gap: 22px;}
+
+s{text-decoration-thickness:1px;}
+h3 small, strong small{font-weight:normal;}
+table, tr, td, th{border:1px solid #666}
+td, th{padding:5px}
+iframe{max-width:100%}
+
+.clap{text-align:center}
+.clap > .updates{margin-top:1em}

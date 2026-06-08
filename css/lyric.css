@@ -1,0 +1,12 @@
+#lyric{display:grid;
+  h3:first-child {margin-top:revert}
+  &.lyric-2col{column-gap:8px;
+    grid-auto-flow: column}
+  &.lyric-2col h3, &.lyric-2col p {grid-column:1}
+  p, &.lyric-2col p{margin-top:0;
+    margin-bottom:1em}
+  .startcol2,
+  .startcol2 ~ p {display:none}
+  &.lyric-2col .startcol2,
+  &.lyric-2col .startcol2 ~ p {display:revert;
+    grid-column:2}}

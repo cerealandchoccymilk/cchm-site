@@ -1,0 +1,1 @@
+document.getElementById("footerYr").innerHTML = "2022–2025";

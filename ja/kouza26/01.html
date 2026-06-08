@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>①サイトの構造・ネオシ操作【一から始めるちょき流HTML 2026】</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<header><h1>一から始める<span class="chk"><a href="/">ちょき</a>流</span>HTML 2026</h1></header>
+  <nav><ul>
+  <li><a href="./">トップページ</a>
+  <li><a href="01">①サイトの構造・ネオシ操作</a>
+  <li><a>②HTMLを打ってみよう</a>
+  <li><a>③CSSを使ってみよう</a>
+  <li><a>④テンプレートについて</a>
+  <li><a>⑤一段階上へ</a>
+  <li><a>⑥更新の裏技</a>
+  <li><a>同人サイトTIPs一覧</a>
+  </ul></nav>
+<main><article>
+
+<section id="00">
+<h2>ウェブサイトの構造</h2>
+<p>まずは、ウェブサイト（Webページ）というものが一体何なのかを見てみましょう。<br>
+  もっと複雑なサイトはいくらでもありますが、比較的シンプルな作りをしている本サイトを参考に説明します。
+<p>もう知ってるよ！という方は目次から「Neocitiesの使い方」まで飛ばしてOKです。
+  <hr>
+<p>そもそも、ウェブサイトとは<mark>「インターネットにアップされていて、その<ruby>住所<rt>アドレス</rt></ruby>を持っている人が見ることができるフォルダー」</mark>なのです。<br>
+<p>フォルダーの基本的な構造はこちら：
+<dl class="code">
+  <dt>index.html</dt><dd>（HTMLファイル）これがページの正体。<div class="sm">実際に本講座のトップページも <code>index.html</code> という名前です！</div></dd>
+  <dt>style.css</dt><dd>（CSSファイル）ページの見た目を変えられる便利グッズ。</dd></dl>
+<p>とにかくこの二つのファイルさえあれば、ウェブサイトは成り立ちます。<br>
+  この形は<a href="https://lit.link" target="_blank">リトリン</a>や無料版<a href="https://piku.page" target="_blank">ピクページ</a>などのようなシングルページサイトが作れますね。<br>
+  ここにまたHTMLファイルを追加すると、ページを増やせます。
+<p class="tip">HTMLファイルとCSSファイルは、テキストファイル <code>〇〇.txt</code> の名前を <code>〇〇.html</code> と <code>〇〇.css</code> に改名しただけのものです。<br>
+  実はパソコンのメモ帳アプリだけで作れますが、本講座は後ほど紹介するNeocitiesの専用エディタを使用します。
+<p>そして住所（=アドレス）とはURLのことで、例えば本ページのURLはこちらですが：<br>
+  <code>https://cerealandchoccymilk.neocities.org/ja/kouza26/01.html</code><br>
+  この <code>.org</code> 以降の <code>/</code>（スラッシュ）がフォルダーを表しています。
+<p>ピンとこない方はこのような図をイメージするといいかもしれません。</p>
+  <img src="img/01-url.png" alt="URLの構造の図" loading="lazy">
+<details><summary>（画像説明）</summary><div>
+  <dl class="code">
+  <dt>https://</dt><dd>ネット国</dd>
+  <dt>cerealandchoccymilk.neocities.org</dt><dd>Neocities市 ちょき家の、</dd>
+  <dt>/ja</dt><dd>中庭にある、</dd>
+  <dt>/kouza26</dt><dd>この本の、</dd>
+  <dt>/01.html</dt><dd>このページ。</dd></dl>
+  <p>この全てを合わせた物をURLと呼び、これがファイルの「住所」を表します。
+</div></details>
+
+</section>
+
+<section id="01">
+<h2>Neocitiesの使い方</h2>
+<p>現在おすすめのサイト管理サービスは、管理人も愛用している<a href="https://neocities.org/" target="_blank">Neocities</a>（<mark>通称「ネオシ」</mark>）です。<br>
+<p>無料プランでも充分な機能があり、容量は1GBと少なそうに見えますがほとんどの場合は全く心配することはありません。
+<p class="sm">管理人のサイトはページ数がそこそこ多いですが、最大容量の<mark>4.7%</mark>しか使っていません。外部に保存している大量のイラストを合わせても50%程度です。
+<p>Neocitiesは英語のサービスですが、以下のガイド、設定一覧、そして必要であれば機械翻訳ツールなどを利用すれば英語が苦手でも操作できる……はず……！<br>
+  （見落としや説明不足が発生する可能性があります。不明な点がありましたらご連絡ください！）
+</section>
+
+<section id="01-1">
+<h3>アカウント作成</h3>
+<p>それでは、サイトへの第一歩となるNeocitiesアカウントを作ってみましょう。
+<p>① <a href="https://neocities.org/" target="_blank">Neocities.org</a>を開くと、このようなユーザー登録欄が出迎えてくれます。</p>
+  <img src="img/01-neo1.png" width="350" alt="Neocitiesのユーザー登録画面" loading="lazy">
+<details><summary>（画像説明）</summary><div>
+  <dl>
+  <dt>Username - [入力].neocities.org</dt>
+    <dd>サイトのURLとなるユーザー名。英数字とハイフン（-）のみ。</dd>
+  <dt>Tags (your interests, site topics)</dt>
+    <dd>活動内容やテーマのタグ（任意）</dd>
+  <dt>Password</dt><dd>パスワード</dd>
+  <dt>Email</dt><dd>Eメールアドレス</dd></dl>
+  <p>左下にCAPTCHA認証ボタン、右下に「サイトを作成する」ボタンがあります。
+</div></details>
+<p>必要事項を入力して"Create My Site"をクリックします。
+<p>② 次はNeocitiesの利用ルールとEメール認証の画面が表示されます。
+<details><summary><mark>利用ルール（クリックで展開）</mark></summary><div>
+  <p>Neocitiesは個人が手作りしたHTMLサイトのためのサービスで、芸術作品、執筆、そして自己表現の場です。
+  <p>Neocitiesを以下の用途に使用することを禁止します。
+  <ul>
+  <li>ログインを必要とするページやユーザーの情報を収集するページ
+  <li>スパムや自動生成コンテンツ
+  <li>違法アップロード
+  <li>ハラスメント、ヘイト、脅迫などの行為
+  <li>詐欺、マルウェア、仮想通貨、ウェブサイトと無関係のファイル保管など、サービスの意図から逸脱した利用</ul>
+</div></details>
+<p>確認のメールが届くので、それに書かれたコードを入力するかリンクを開くことで認証できます。<br>
+  届かない場合は迷惑メールを確認してから"Resend Confirmation Email"を押すと再送信されます。<br>
+  アドレスを間違えた場合は正しいアドレスを入力して"Update Email Address"をクリックしてください。
+<p>③ メール認証が完了したら利用プラン選択の画面に移ります。</p>
+  <img src="img/01-neo2.png" alt="Neocitiesの利用プラン選択画面。左側に無料プラン、右に月額5ドルの有料プランがあります。" width="400" loading="lazy">
+<p>Neocitiesは広告を表示しない代わりに、サポーターの支援で資金を得ています。<br>
+  今は左の無料プランを選択しましょう。もちろん、後からいつでもサポータープランに加入できます。
+<p>④ 次の画面は、上にNeocitiesのHTMLレッスン、中央にサイト編集画面、下に他サイト一覧を開くリンクあります。</p>
+  <img src="img/01-neo3.png" alt="Let's Get Started!ページ" width="400" loading="lazy">
+<p>Neocitiesの公式レッスンはとても可愛くて分かりやすいのですが、全て英語なので一旦スルーして、中央のサイト編集画面に進みましょう。
+<p>⑤ サイト編集画面（ダッシュボード）に辿り着きました。既にファイルが数個揃っていますね。
+<p>以下はヘッダー、テキストエディタ、設定画面のメニュー説明となります。<br>
+  所々に表記揺れが発生しています。分かりづらいようでしたら統一して作り直します。<br>
+<p>分からなくなった時の一覧表として書いているので、不要な方は<s>「②HTMLを打ってみよう」に進んでください。</s> <mark>現在執筆中です！しばらくお待ちください。</mark>
+<hr>
+</section>
+
+<section id="01-2">
+<h3>メニューボタン一覧</h3>
+<p><b class="mark">ヘッダー・アカウントメニュー</b></p>
+  <img src="img/01-menu1.png" alt="ヘッダーとアカウントメニューの解説" loading="lazy">
+<details><summary>（画像説明・ヘッダー）</summary><div>
+  <dl>
+  <dt>猫（Penelope）アイコン</dt>
+    <dd>フォロー中サイトの更新タイムライン</dd>
+  <dt>Websites</dt>
+    <dd>サイトを探す</dd>
+  <dt>Activity</dt>
+    <dd>ネオシ全体のタイムラン（全サイトの更新）</dd>
+  <dt>Learn</dt>
+    <dd>HTML、CSS、Javascriptなどの講座や参考サイト（英語）</dd>
+  <dt>Upgrade to Supporter</dt>
+    <dd>有料（サポーター）プランへの移行</dd>
+  <dt>アカウント名</dt>
+    <dd>アカウントメニュー</dd></dl>
+</div></details>
+<details><summary>（画像説明・アカウントメニュー）</summary><div>
+  <dl>
+  <dt>Profile</dt>
+    <dd>Neocities内のプロフィール</dd>
+  <dt>Activity</dt>
+    <dd>サイトの履歴（個人TL）</dd>
+  <dt>Edit</dt>
+    <dd>サイトを編集</dd>
+  <dt>View</dt>
+    <dd>サイトを開く</dd>
+  <dt>Stats</dt>
+    <dd>サイトアクセス推移</dd>
+  <dt>Settings</dt>
+    <dd>設定</dd>
+  <dt>Sign Out</dt>
+    <dd>ログアウト</dd></dl>
+</div></details>
+<p><b class="mark">テキストエディタ</b></p>
+  <img src="img/01-menu2.png" alt="テキストエディタ上部ボタンの解説" loading="lazy">
+<details><summary>（画像説明）</summary><div>
+  <dl>
+  <dt>Dashboard</dt>
+    <dd>ダッシュボード（サイト編集画面・ファイル一覧トップ）</dd>
+  <dt>Theme</dt>
+    <dd>エディタのテーマ色</dd>
+  <dt>Save</dt>
+    <dd>保存</dd>
+  <dt>View</dt>
+    <dd>ページを開く</dd>
+  <dt>Share</dt>
+    <dd>外部に共有</dd>
+  <dt>Settings</dt>
+    <dd>設定</dd></dl>
+</div></details>
+<p><b class="mark">テキストエディタ設定</b></p>
+  <img src="img/01-menu3.png" alt="エディタ設定の解説" width="400" loading="lazy">
+<details><summary>（画像説明）</summary><div>
+  <dl>
+  <dt>Enable Code Autocomplete</dt>
+    <dd>コード予測変換を有効にする</dd>
+  <dt>Enable MDN Help</dt>
+    <dd>MDN（コードWiki）補足を有効にする<div class="sm9">（使い方は分かりません……）</div></dd>
+  <dt>Font Size - Small/<u>Medium</u>/Large</dt>
+    <dd>フォントの大きさ（小・<u>中</u>・大）</dd>
+  <dt>Tab Width - <u>Two Spaces</u> / Four Spaces</dt>
+    <dd>Tabのスペース数（<u>スペース2個分</u>・4個分）</dd>
+  <dt>Keyboard Mode</dt>
+    <dd>キーボードモード<br>※これが使える人はこんな初心者向け講座なんて見ません。<br>Defaultにしておいてください。</dd>
+  <dt>Cancel / Save Settings</dt>
+    <dd>キャンセル・設定を保存</dd></dl>
+</div></details>
+<p class="tip">テキストエディタをスマホやタブレットで利用していると、環境によっては文字を打つ時に画面が移動してしまうバグがあります。<br>
+  バグが発生した場合、ブラウザの「デスクトップ表示」をONにすると改善されます。（<a href="https://appllio.com/how-to-view-pc-websites-on-smartphone" target="_blank">こちらで切り替え方法を確認できます</a>）
+</section>
+
+<section id="01-3">
+<h3>設定画面一覧</h3>
+<p>※アカウント設定の詳細（パスワード変更など）は説明不要なので省略
+<p><b class="mark">アカウント設定（サイト一覧画面）</b></p>
+  <img src="img/01-settings01.png" alt="アカウント設定のサイト一覧画面" loading="lazy">
+<details><summary>（画像説明・アカウント設定メニュー）</summary><div>
+  <dl>
+  <dt>Sites</dt>
+    <dd>サイト一覧</dd>
+  <dt>Supporter</dt>
+    <dd>プラン情報</dd>
+  <dt>Password</dt>
+    <dd>パスワード変更</dd>
+  <dt>Email</dt>
+    <dd>メールアドレス変更</dd>
+  <dt>Delete Account</dt>
+    <dd>アカウント削除</dd></dl>
+</div></details>
+<details><summary>（画像説明・サイト一覧画面）</summary><div>
+  <dl>
+  <dt>Your Sites</dt>
+    <dd>サイト一覧</dd>
+  <dt>[username] (parent account)</dt>
+    <dd>【ユーザー名】（メインアカウント）<div class="sm9">ユーザー名をクリックするとサイトが開かれます</div></dd>
+  <dt>Manage Site Settings</dt>
+    <dd>サイト設定</dd>
+  <dt>Create New Site</dt>
+    <dd>サイトを増やす</dd>
+  <dt>Multiple Site Creation is only available for supporter accounts. Update now!</dt>
+    <dd>複数サイト作成はサポータープラン限定の機能です。（プラン変更リンク）</dd></dl>
+</div></details>
+<p><b class="mark">サイト設定</b></p>
+  <img src="img/01-settings02.png" alt="サイト設定メニュー" loading="lazy">
+<details><summary>Profile / プロフィール</summary>
+  <img src="img/01-settings03.png" alt="プロフィール設定画面" width="400" loading="lazy"><div>
+  <dl>
+  <dt>General Settings</dt>
+    <dd>一般設定</dd>
+  <dt>Site Profile</dt>
+    <dd>サイトプロフィール</dd>
+  <dt>Disable Site profile Comments</dt>
+    <dd>サイトプロフィールのコメント書き込みを無効化する</dd>
+  <dt>Disable Site Profile</dt>
+    <dd>サイトプロフィールページを非表示にする</dd>
+  <dt>Update Settings</dt>
+    <dd>設定を適用</dd></dl>
+</div></details>
+<details><summary>Tags / タグ</summary>
+  <img src="img/01-settings04.png" alt="タグ設定画面" loading="lazy"><div>
+  <dl>
+  <dt>Tags help people find your site on Browse. Use short, descriptive keywords (letters and numbers only) so visitors can discover you more easily.</dt>
+    <dd>サイトにタグを付けるとNeocities内の検索に役立ちます。短いキーワード（英数字のみ）を登録して色々な人にサイトを発見してもらいましょう。</dd>
+  <dt>Current Tags</dt>
+    <dd>現在のタグ</dd>
+  <dt>Add Tags</dt>
+    <dd>タグを登録する</dd>
+  <dt>Separate multiple tags with commas.</dt>
+    <dd>複数登録する場合は間まで区切ってください。</dd>
+  <dt><code>art, music, personal</code></dt>
+    <dd>絵、音楽、パーソナル（個人サイト）
+    <div class="sm9">その他のタグ例：japanese, blog, oc (一次創作), fanart (二次創作), 二次創作サイトやファンサイトの場合は作品名など</div></dd>
+  <dt>Remove Tags</dt>
+    <dd>タグを削除する</dd></dl>
+</div></details>
+<details><summary>Custom Domain / 独自ドメイン</summary>
+  <img src="img/01-settings05.png" alt="独自ドメイン設定画面" loading="lazy"><div>
+  <dl>
+  <dt>Adding a custom domain allows you to have a domain name attached to your web site. (中略)<br>If you don't have the domain yet, you will have to purchase a domain name from a registrar like Namecheap first.</dt>
+    <dd>独自ドメインを持っている場合はここで登録できます。既に持っていない場合はNamecheapなどのサービスから購入する必要があります。</dd>
+  <dt>Custom Domains require a Supporter account. Upgrade now.</dt>
+    <dd>独自ドメインはサポータープラン限定機能です。（プラン変更リンク）</dd></dl>
+</div></details>
+<details><summary>Rename / サイト名変更</summary>
+  <img src="img/01-settings06.png" alt="サイト名変更画面" loading="lazy"><div>
+  <dl>
+  <dt>Change Site (User) Name</dt>
+    <dd>サイト名（ユーザー名）変更</dd>
+  <dt>Warning: It is very damaging to change your site name after it is already established, as this breaks search engine links to your site and will reduce your amount of site visitors. Unless you made a typo when editing your site, you really don't want to do this!</dt>
+    <dd>【注意】検索エンジンなどでリンク切れを引き起こし、閲覧者数を減らしてしまうため、サイトが確立してからサイト名を変更することは推奨されていません。<br>
+    サイト作成時のミス修正以外での変更はお勧めしません。</dd>
+  <dt>It cannot contain spaces, cannot start or end with a hyphen (-), and can only use the following characters: a-z A-Z 0-9 -</dt>
+    <dd>英数字とハイフンのみ使用可能です。（a-z A-Z 0-9 -）<br>使用不可：スペース、冒頭・末尾のハイフン</dd>
+  <dt>Current name</dt>
+    <dd>現在のサイト名</dd>
+  <dt>New name</dt>
+    <dd>新しいサイト名</dd>
+  <dt>Change Name</dt>
+    <dd>変更する</dd></dl>
+</div></details>
+<details><summary>Tipping / 投げ銭</summary>
+  <img src="img/01-settings07.png" alt="投げ銭設定画面" loading="lazy"><div>
+  <dl>
+  <dt>Site Tipping</dt>
+    <dd>サイト投げ銭</dd>
+  <dt>This adds a "Send a Tip" button to your site profile, allowing people to send tips to you for your site. This will send users to PayPal to send money to your account. If you have a Bitcoin address, you can add that too.</dt>
+    <dd>サイトのプロフィールページに「投げ銭する」ボタンを追加し、クリックするとPayPalの送金画が開かれます。Bitcoinアドレスを持っている場合そちらも追加できます。</dd>
+  <dt>Enable Site Tipping</dt>
+    <dd>サイト投げ銭を有効にする</dd>
+  <dt>PayPal email address</dt>
+    <dd>PayPalメールアドレス</dd>
+  <dt>Bitcoin address</dt>
+    <dd>Bitcoinアドレス</dd>
+  <dt>Update</dt>
+    <dd>設定更新</dd></dl>
+</div></details>
+<details><summary>API</summary>
+  <img src="img/01-settings08.png" alt="APIキー管理画面" loading="lazy"><div>
+  <dl>
+  <dt>API Key</dt>
+    <dd>APIキー</dd>
+  <dt>An API Key can be used with the Neocities API to allow for changes to your site without requiring login credentials. This API key allows full write access to your site. Keep it secret, keep it safe.</dt>
+    <dd>APIキーはNeocities APIと連携し、ログイン情報不要でサイト内容を変更することができます。APIキーを持っている人にはサイトの編集機能が全て解放されるので、絶対に外部に共有しないでください。</dd>
+  <dt>Generate API Key</dt>
+    <dd>APIキーを作成する</dd></dl>
+  <p class="bold">よく分からない人は触らないように！！
+</div></details>
+<details><summary>18+</summary>
+  <img src="img/01-settings09.png" alt="18禁コンテンツ設定画面" loading="lazy"><div>
+  <dl>
+  <dt>18+ Content</dt>
+    <dd>18禁コンテンツ</dd>
+  <dt>If your site contains objectionable (18+) content, check this box. Your site will not be removed, but it will be listed on a special browse page. We don't have an official policy on what defines 18+ content yet, but basically it's just pornography and lewd/sick/gross images.（略）</dt>
+    <dd>サイトに18歳以下覧禁止のコンテンツがある場合はこちらのボタンを選択してください。<br>サイトは削除されませんが、一般のNeocities内検索ページとは別のページに掲載されます。現在18禁コンテンツの細かい定義は定めていませんが、ポルノや性的・刺激的な画像などといった物を含みます。</dd>
+  <dt>My page has 18+ content</dt>
+    <dd>本サイトは18禁コンテンツを含みます</dd>
+  <dt>Update</dt>
+    <dd>適用する</dd></dl>
+</div></details>
+<details><summary>Bluesky</summary>
+  <img src="img/01-settings10.png" alt="Bluesky連携画面" loading="lazy"><div>
+  <dl>
+  <dt>Bluesky Integration</dt>
+    <dd>Bluesky連携</dd>
+  <dt>You can now verify control of your site on Neocities to create a domain based handle on Bluesky.</dt>
+    <dd>BlueskyのハンドルネームをNeocitiesサイトと連携させることができます。</dd>
+  <dt>Bluesky App → "Settings" → "Account" → "@ Handle"</dt>
+    <dd>Blueskyアプリ → 設定 → アカウント → @ハンドル → 自分のドメインを持っています</dd>
+  <dt>Domain</dt>
+    <dd>使用するドメイン</dd>
+  <dt>Select No DNS Panel</dt>
+    <dd>「DNSパネルがない場合」を選択</dd>
+  <dt>Paste the DID here</dt>
+    <dd>DIDをコピペしてください</dd>
+  <dt>Update DID</dt>
+    <dd>DIDを更新</dd></dl>
+</div></details>
+<details><summary>Delete Site / サイト削除</summary>
+  <img src="img/01-settings11.png" alt="サイト削除画面" loading="lazy"><div>
+  <dl>
+  <dt>WARNING</dt>
+    <dd>【注意】</dd>
+  <dt>This will delete your site (site name/URL).</dt>
+    <dd>サイト（サイト名）は削除されます。</dd>
+  <dt>You will not be able to use your email address to register a new Neocities account after deleting this one.</dt>
+    <dd>同じメールアドレスで新規Neocitiesアカウントを作ることができなくなります。</dd>
+  <dt>You will not be able to create a site again with this same username.</dt>
+    <dd>同じユーザー名のサイトを作ることができなくなります。</dd>
+  <dt>We can't reverse any of this via our contact form for security reasons.</dt>
+    <dd>セキュリティ対策のため、問い合わせフォームへ連絡されても取り消しはできません。</dd>
+  <dt>There is no undo! Be very sure you want to do this.</dt>
+    <dd>サイト削除は取り消せません。本当によろしいでしょうか？</dd>
+  <dt>We're sorry to see you go. What's the reason you're deleting your site?</dt>
+    <dd>サイト削除の理由をご記入ください</dd>
+  <dt>Enter your user/site name to confirm deletion:</dt>
+    <dd>最終確認のためサイト名（ユーザー名）をご記入ください</dd>
+  <dt>Delete Site</dt>
+    <dd>サイト削除</dd></dl>
+</div></details>
+</section>
+
+<section id="upd">
+  <section id="clap">
+  <a href="//clap.fc2.com/post/cerealandchoccymilk/?url=https%3A%2F%2Fcerealandchoccymilk.neocities.org%2Fja%2Fkouza26%2F01&amp;title=kouza26%2F01" target="_blank" title="web拍手 by FC2"><img src="//clap.fc2.com/images/button/orange/cerealandchoccymilk?url=https%3A%2F%2Fcerealandchoccymilk.neocities.org%2Fja%2Fkouza26%2F01&amp;lang=ja" alt="web拍手 by FC2"></a>
+  </section>
+<h2>更新履歴</h2>
+<pre>
+2026.01.09 - 公開</pre>
+</section>
+</article>
+
+<aside>
+<h3>目次</h3>
+<div><input type="checkbox" id="toc"><label for="toc"></label>
+  <menu>
+  <li><a href="#00">ウェブサイトの構造</a>
+  <li><a href="#01">Neocitiesの使い方</a>
+  <ul><li><a href="#01-1">アカウント作成</a>
+      <li><a href="#01-2">メニューボタン一覧</a>
+      <li><a href="#01-3">設定画面一覧</a></ul>
+  <li><a href="#upd">更新履歴</a>
+  </menu>
+</div></aside>
+<footer><a href="./"><img src="https://file.garden/ZbpUQD2lT2-4iaij/banner/kouza26.png" width="200" height="40" alt="「一から始めるちょき流HTML講座」バナー"></a></footer>
+</main>
+
+</body>
+</html>

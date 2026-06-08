@@ -1,0 +1,21 @@
+@import url('https://fonts.cdnfonts.com/css/nishiki-teki');
+
+#neo-nihongo-txt, #neo-nihongo-img{margin: 0 auto;
+  border: solid 1px;
+  display: inline-block;
+  padding:5px;
+  color: #B33931;
+  line-height:1.5;
+  text-align:center;
+  background-color: #ffffff;
+  font-family: 'nishiki-teki', 'Meiryo', sans-serif;
+
+  td{vertical-align:middle;}
+  .ring-main{padding: 0 5px}
+  table, tr, td{border:none;}
+}
+#neo-nihongo-img{image-rendering: pixelated;
+  border:none;
+  background:none;
+  color: #FF4D41;
+}

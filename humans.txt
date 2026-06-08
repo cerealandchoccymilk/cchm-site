@@ -1,0 +1,36 @@
+/* TEAM */
+
+Webmaster: Choccy
+Website: https://cerealandchoccymilk.neocities.org
+Contact: cerealandchoccymilk [at] icloud [dot] com
+Location: USA
+
+/* THANKS */
+
+Translation and grammar assistance: Choccy's mother
+Location: USA
+
+Tech support: Choccy's father
+Location: USA
+
+Moral support and kissies: Sumiso
+Website: https://ebihuryaman.wixsite.com/nekochankawaiine/home
+Location: Japan
+
+Moral support: Dori
+Tumblr: @doortongs
+Location: USA
+
+Moral support: Morp
+Tumblr: @morp
+
+/* SITE */
+
+Doctype: HTML, CSS
+Languages: English, Japanese
+Components: jQuery
+Software: Notion, VSCodium, Vivaldi browser, ImageOptim
+Hosts: Neocities, File Garden
+Last humans.txt update: 2026/01/04
+
+https://humanstxt.org

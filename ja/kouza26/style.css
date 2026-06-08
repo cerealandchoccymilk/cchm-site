@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=M+PLUS+1+Code:wght@100..700&family=Noto+Sans+JP:wght@100..900&display=swap');
+@font-face {font-family: 'Oshigo';
+    src:url('/fonts/oshigo.woff2') format('woff2'),url('/fonts/oshigo.woff') format('woff'); font-weight:normal; font-style:normal; font-display:swap}
+
+*,*::before,*::after{box-sizing:border-box;}
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,del,em,img,b,i,dl,dt,dd,form,table,tbody,tr,th,td,article,aside,footer,header,nav,section{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent} img,picture,video,canvas,svg,input,textarea{display:inline-block;max-width:100%} img{height:auto;box-sizing:content-box} input,button,textarea,select{font:inherit} a{text-decoration:none;outline:none} p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word} @media(prefers-reduced-motion:no-preference){html {interpolate-size:allow-keywords/*https://www.joshwcomeau.com/css/custom-css-reset/#three-enable-keyword-animations-4*/}*{scroll-behavior:smooth}} *{overflow-wrap:break-word;word-wrap:break-word}
+h2:first-child:not(section > h2),h3:first-child:not(section > h3),h4:first-child,h5:first-child,h6:first-child,p:first-child:not(section > p),dl:first-child,ul:first-child{margin-top:0}
+h2:last-child,h3:last-child,h4:last-child,h5:last-child,h6:last-child,p:last-child:not(section > p),dl:last-child,ul:last-child:not(ul ul){margin-bottom:0}
+
+:root{--bgclr:#e2f5ff;
+      --linkclr:#0d6eff;
+      --codebg:#c2eaff;
+      --codebdr:#aaddff;
+      --btnbg:#ffffffa0;}
+
+html{height:auto}
+body{height:auto;
+  max-width:800px;
+  background:url("/img/myshit/chevronb-t.png") var(--bgclr);
+	margin:15px auto;
+  padding:0 15px;
+  font-size:.9em;
+  line-height:1.5;
+  letter-spacing:.03em;
+  font-family:"Trebuchet MS",TrebuchetMS,"M PLUS 1","Noto Sans JP","Yu Gothic",'游ゴシック体',YuGothic,'Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%}
+
+header{text-align:center; margin:8px;
+  h1{font-size:1.65em; display:inline-block; position:relative; margin-top:20px;
+  .chk{position:absolute;
+    font-size:0.45em;
+    background:#fff;
+    border-radius:50%;
+    border:1.5px solid;
+    display:inline-block;
+    padding:3px 6px;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    top:-23px; left:125px;
+    &::after,&::before{
+      top: calc(100% - 2px);
+      left: 30%;
+      border: solid transparent;
+      content: " ";
+      height: 0; width: 0;
+      position: absolute;
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);}
+    &::after {
+      border-color: rgba(255, 255, 255, 0);
+      border-top-color: #ffffff;
+      border-width: 6px;
+      margin-left: -6px;}
+    &::before {top: 100%;
+      border-color: rgba(0, 0, 0, 0);
+      border-top-color: #000000;
+      border-width: 6px;
+      margin-left: -6px;}
+    a{color:#3B98E7;
+      &:hover{color:#FF5107;}}
+  } } }
+main{margin:15px auto;
+  display:grid; gap:10px;
+  grid-template-columns:200px 1fr;}
+nav{margin:8px auto;text-align:center;
+  ul{margin:0;padding:0}
+  li{display:inline-flex;
+    border:dashed 1.5px #000;
+    border-radius:2px; /* don't like it too much but thats the only way to get dashed working on ios */
+    margin:3px}
+  a{padding:2px 4px;
+    color:#000;
+    background:var(--btnbg);
+    &:hover{color:var(--linkclr); background:#fff}
+    &:not([href]){opacity:50%;
+      &:hover{color:#000;background:var(--btnbg);cursor:unset;}}} }
+aside{grid-column:1; grid-row:1;
+  menu{margin:0; &,menu,ul,ol{padding-left:15px}}
+}
+article{grid-column:2; grid-row:1}
+footer{margin:20px auto 10px;
+  font-size:0.8em;
+  grid-column: 1/3;
+  text-align:center;
+  img{display:block;
+    margin-bottom:5px}
+  &::after{content:"©cerealandchoccymilk 2022–2026"} } /* change every year */
+
+h2{font-size:1.6em;
+  margin:1.8em 0 .5em}
+h3{font-size:1.3em;
+  margin:1.5em 0 .5em;}
+
+article:first-child > h2:first-child, section:first-child > h2:first-child,
+article:first-child > h3:first-child, section:first-child > h3:first-child{margin-top:0}
+article:last-child p:last-child, section:last-child p:last-child{margin-bottom:0}
+
+p{margin:1em 0}
+a{color:var(--linkclr);
+  &:hover{color:#000;
+    cursor:pointer}}
+hr{color:#000; border:none; border-top:3px double;
+  height:3px; max-width:300px;
+  margin:1.5em auto; text-align:center;
+  overflow:visible;
+  &::after{content: "<hr>"; font-size:0.8em;
+    background:var(--bgclr); padding:0 10px;
+    position:relative; top:-14px} }
+
+dt{display:inline-block;line-height:1.2; font-weight:600} 
+  dd{margin-left:2em;
+    &::before{content:"┗╸";
+      position:absolute;
+      margin-left:-2em} }
+code/*,mark*/,.code dt{border:var(--codebdr) solid 1.5px}
+code,.code dt{background:var(--codebg)}
+mark,.mark{background:white;}
+pre{background:var(--codebg);
+  border:var(--codebdr) solid;
+  padding:5px;
+  margin:0.5em 0;
+  line-height:1.3}
+textarea,code,pre,.code dt{font-family:"M PLUS 1 Code",Menlo,'Courier New',Courier,monospace}
+pre,code,.code dt{word-break:break-all;white-space:pre-wrap;}
+
+small, .sm{font-size:0.8em}
+.sm9{font-size:0.9em}
+dl{margin:1em 0}
+
+button, label[for="toc"]{color:#000;
+  background:var(--btnbg);
+  border:#000 dashed 1.5px;
+  border-radius:8px;
+  padding:1px 6px;
+  cursor:pointer;
+  &:hover{color:var(--linkclr);background:#fff;} }
+
+textarea{background:var(--codebg);}
+summary{cursor:pointer}
+details{margin:5px 0}
+details[open]{background:#fff} /* ? */
+details>div{display:inline-block}
+details>div,.tip,.point{background:#fff;
+  padding:10px;
+  font-size:0.9em}
+.tip,.point{margin:1em 0;
+  &::before{font-family:Oshigo} }
+.tip::before{content:"∠TIP";
+  margin-right:4px;
+  color:#ffa220}
+.point::before{content:"ワンポイント!";
+  letter-spacing:-0.1em;
+  font-size:0.8em;
+  margin-right:7px;
+  color:#ff702e}
+
+img{vertical-align:middle}
+img:not(#btn img,[alt*="web拍手"],.btn img){display:block;margin:auto}
+img[alt*="web拍手"]:not(#clap img){transform:translateY(-1px);
+  /* vertical-align:middle */}
+img[src*="kouza26.png"]{outline:#fff 1px solid}
+#clap{float:right;margin-top:4px}
+
+.pixelimg{image-rendering:pixelated}
+.regimg{image-rendering:initial}
+.bold{font-weight:bold}
+
+
+
+@media screen and (min-width:651px){#toc,#toc~label{display:none}}
+
+@media screen and (max-width:650px){
+  main{grid-template-columns:1fr}
+    aside{grid-column:1;grid-row:1;
+    display:inline-block;width:max-content}
+    article{grid-column:1;grid-row:2}
+  aside{margin:auto;
+    display:grid; gap:10px;
+    grid-template-columns:auto auto;
+      /* https://css-tricks.com/the-checkbox-hack/ */
+    menu{display:none}
+    #toc {position:absolute; z-index:-1; opacity:0;
+      &:checked~menu {display:block; margin-top:0.5em}
+      &~label{display:inline-block;
+        &::after{content:"クリックで開く"}}
+      &:checked~label::after{content:"クリックで閉じる"}
+    } }
+}

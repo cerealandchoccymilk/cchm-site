@@ -1,0 +1,82 @@
+#index{
+  text-align:center;
+  margin:0 15px;
+  background:#E5E5E5 url(/img/myshit/usdx-marx-arena.png);
+  image-rendering: pixelated;
+  header, section, footer{
+    margin:15px auto;
+    max-width:450px;
+    background:#FFFFFFEA;}
+  h2{margin:0;
+    border-color:var(--lightblue2);
+    padding:5px}
+  h3{padding:0;
+    &:first-child{margin-top:0}}
+  section{padding:15px;
+    border:1.5px solid var(--lightblue2)}
+  button{margin:5px}
+  #link input{width:235px}
+  footer{font-size:0.9em;
+    border:1.5px solid var(--pink1);
+    padding:5px}
+  mark{font-weight:600}
+  .grid-2col p:last-child{margin-top:0}
+  hr{margin:1em 20%}
+  #choccy h2{padding:8px}
+  #linklist p{text-align:left} }
+#kb{font-size:0.95em;
+  img{margin-top: 5px;
+    &:hover{content: url(/img/myshit/kb2.gif)} } }
+#langbuttons {position:fixed;
+  top:0; right:0;
+  padding:5px;
+  background:#f5f5f5d0;
+  border-radius:0 0 0 6px;
+  border-width:1.5px;
+  border-color:var(--lightblue2);
+  border-style: none none solid solid;
+  button {font-size:16px;
+    font-weight:600} }
+
+#statuscafe{margin:1.5em auto; padding:.5em;
+  max-width:500px;
+  background-color:azure;
+  border:1px dashed}
+#statuscafe-username{margin-bottom:.5em; text-align:center}
+#statuscafe-content{margin:0 1em 0.5em 1em}
+#webrings, #fanlistings, #doumei, .items{display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
+  margin:25px 30px}
+#webrings{overflow:auto;
+  margin-top:10px;
+  height:300px;
+  resize:vertical;
+  > div{display:inline-block; vertical-align:middle; margin:7px} }
+#fanlistings img, #fanlistings > div, #doumei img{display:inline-block; vertical-align:middle; margin:2px}
+
+#webrings{
+  #tmri{color:#000;
+    span a{display:initial; margin:0; border-bottom:none; line-height:initial} }
+  #autiring{width:fit-content; text-align:center; font-size:0.9em;
+    a:first-child, a:last-child{padding:0.1em} }
+  #aperturewebring{padding:0}
+  #sogma{padding:0;
+    table tr td{padding:5px} }
+  #dsring{padding: 15px}
+  #yaoiring{display:grid;
+    background-image:
+      linear-gradient(to top,#000,#00000000),
+      url('https://www.virtuagirl.net/STORAGEROOM/xxxholic.png'); /* upload your image or use the preuploaded one :- ) */
+    background-size:cover;
+    height:100px; width:200px;
+    color:#fff;
+    font-family:'Times New Roman'; font-size:18px;
+    span{display:inline-block; align-self:end; justify-self:center; text-align:center}
+    a{text-decoration:none; color:#fff} }
+  #OtakuRing{padding:0;
+    img{height:60px} }
+}
+
+#links input{width:200px}

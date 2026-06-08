@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>タイトル</title>
+<link rel="stylesheet" href="/webrings/css/bootstrap.css">
+<link rel="stylesheet" href="/webrings/css/style.css">
+</head>
+<body class="site">
+<div class="container">
+  <div class="row">
+    <header>
+    <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+    <div class="header">
+      <h1 class="site-title"><a href="sample.html">Hexagon</a></h1>
+      <nav>
+      <ul class="gnav">
+        <li><a href="sample.html#TEXT">text</a></li>
+        <li><a href="sample.html#ILLUST">illust</a></li>
+        <li><a href="bkm.html">bkm</a></li>
+        <li><a href="mail.html">mail</a></li>
+      </ul>
+      </nav>
+    </div>
+    </div>
+    </header>
+  </div>
+  <div class="row">
+    <main>
+    <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+      <section>
+        <h2>Mailform etc...</h2>
+        <div class="inner">
+        <section>
+          <h3>メールフォーム（大）</h3>
+          <form action="#" method="post">
+            <label>お名前<br>
+            <input type="text" size="30" id="name"></label><br>
+            <label>メールアドレス<br>
+            <input type="text" size="30" id="mail"></label><br>
+            <label>メッセージ<br>
+            <textarea cols="40" rows="5"></textarea></label><br>
+            <span>返信は…</span>
+            <ul class="hensin">
+              <li><label><input type="radio" name="返信" value="必要">必要</label></li>
+              <li><label><input type="radio" name="返信" value="不要">不要</label></li>
+              <li><label><input type="radio" name="返信" value="おまかせ">おまかせ</label></li>
+            </ul>
+            <input type="submit" value="送信" class="btn-color">
+          </form>
+        </section>
+        <section>
+          <h3>メールフォーム（小）</h3>
+          <form action="#" method="post">
+            <textarea cols="40" rows="1" placeholder="一言からお気軽に！　※動きません" class="comment"></textarea>
+            <input type="submit" value="送信" class="btn-color bottom">
+          </form>
+        </section>
+        <section>
+          <h3>折り畳みボックス</h3>
+          <dl class="acMenu">
+          <dt>ここをクリックすると</dt>
+          <dd>表示されます。コメントのお返事や控えめな注意書きなどにいいかも。<br>これはjQueryと定義リストを使用しています。折り畳みは色々な方法で実装できるので、検索するとお好みのものが見つかるかもしれません。</dd>
+          </dl>
+        </section>
+        <section>
+          <h3>名前変換フォーム</h3>
+          <form method="post" action="#">
+          <input type="text" size="12" placeholder="名字">
+          <input type="text" size="12" placeholder="名前">
+          <input type="submit" value="登録" class="btn-color">
+          <input type="submit" value="削除" class="btn-color">
+          </form>
+          <p>あくまでデザインのサンプルなので、動かすには記述を足す必要があります。</p>
+        </section>
+        </div>
+      </section>
+      <section>
+        <h2>h2要素（.site &lt;main&gt;の中だけ）</h2>
+        <div class="inner">
+        <h3>h3要素（同上）</h3>
+        <p>
+          <a href="sample.html">リンクの文字色</a><br>
+          <strong>&lt;strong&gt;強い重要性&lt;/strong&gt;</strong>
+        </p>
+        <p>
+          あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん<br>アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヲラリルレロワヲン
+        </p>
+        <hr>
+        <p>
+          ↑&lt;hr&gt;　ABCDEFGHIJKLMNOPQRSTUVWXYZ　abcdefghijklmnopqrstuvwxyz<br>0123456789
+        </p>
+        <div class="box">
+        装飾ボックス<br>
+        何か目立たせたい時に使ってください。<br>
+        テキストテキスト
+        </div>
+        </div>
+      </section>
+    </div>
+    </main>
+  </div><!-- /.row -->
+</div><!-- /.container -->
+<!-- 折り畳みボックスを使う場合は以下の記述が必要です。 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".acMenu dt").on("click", function() {
+            $(this).next().slideToggle(300);
+        });
+    });
+</script>
+<!-- 折り畳みボックスに必要なスクリプトここまで -->
+</body>
+</html>

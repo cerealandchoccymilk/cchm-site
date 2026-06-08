@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&family=Yusei+Magic&display=swap');
+.skranji-regular {
+  font-family: "Skranji", system-ui;
+  font-weight: 400;
+  font-style: normal;}
+.skranji-bold {
+  font-family: "Skranji", system-ui;
+  font-weight: 700;
+  font-style: normal;}
+.yusei-magic-regular {
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+
+@media(prefers-reduced-motion:no-preference){*{scroll-behavior:smooth}}
+
+/*!
+ * Template: 28-Hexagon v1.0.0 (https://klee.mypace.net/)
+ * Copyright 2017 klee
+ * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
+ */
+/* ============================================================
+   適用デバイス：すべて（xs,sm,md,lg）
+   ============================================================ */
+/* 適用対象：要素全体
+   ============================================================ */
+/* リセットCSS */
+h1{font-weight: normal;}
+nav ul{list-style:none;padding:0;font-size:0.9em}
+nav ul, dt, dd{margin: 0;}
+ins{text-decoration: none;}
+
+/* bodyなど */
+body{line-height:1.7;background: cadetblue;color: #333;margin: 0 0 20px;}
+
+/* フォーム関連 */
+input, select, textarea{vertical-align:middle;}
+::-webkit-input-placeholder{color: #999;}
+:-ms-input-placeholder{color: #999;}
+::-moz-placeholder{color: #999;}
+label{cursor: pointer;}
+
+input, textarea{padding: 0.3em;border-radius: 2px;margin: 0 5px 5px 0;}
+input[type="text"], textarea{border: 1px solid #bbb;}
+input[type="submit"]{cursor: pointer;}
+
+/* リンク */
+a{text-decoration: none;color: #333;background: rgba(95,158,160,0.2);}
+a:hover{background: rgba(95,158,160,0.4);}
+
+/* 水平線 */
+hr{border-top: 2px solid #bbb;}
+/* 重要性 */
+/* strong{} */
+/* 追加要素 */
+ins{position: relative;}
+ins::after{content: "new!";font-family: 'Skranji', 'Yusei Magic', cursive; color: #000; margin-left: 15px;}
+
+/* 適用対象：クラス名を付けた要素
+   ============================================================ */
+/* 見出し */
+.site-title{margin: 0 0 5px;display: inline-block;line-height:1.25}
+.site-title a{font-size: 2.5rem;font-family: 'Skranji', 'Yusei Magic', cursive;}
+.site main h2{color: #000;text-align: center;font-family: 'Skranji', 'Yusei Magic', cursive;font-size: 1.9rem;}
+.site main h2::before, .site main h2::after{content: "-"; margin: 0 10px;}
+.site main h3{color: cadetblue;font-size: 1.4rem;margin: 5px auto;}
+.site main h3::before{content: "◆ ";}
+
+/* ヘッダー */
+.header{border-radius:0 0 20px 20px;background: #000 url(../img/header.png) 95% 50% no-repeat;background-size: 50px 44px;padding: 10px 0 10px 30px;/*margin-bottom: 20px;*/ text-align: left;color: #fff}
+.header a{background-color: transparent;color: #fff;}
+/* 更新履歴 */
+.lastup{display: block;}
+
+/* ナビゲーションメニュー */
+/* .gnav{margin-top: 10px;} */
+.gnav li {display: inline;padding-right: 10px;}
+.gnav li a{font-family: 'Skranji', 'Yusei Magic', cursive;font-size: 1.6rem;padding-top: 3px;}
+.gnav li a:hover{border-top: 2px solid;}
+
+/* 展示リスト */
+.list, .list-ss{list-style: none;padding: 0;}
+.list li{color: #666;}
+.list li a{margin-right: 15px;}
+.list-caption dd{padding-left: 10px;}
+.list-slash dt {float: left;width: 8em;height:auto;}
+.list-slash dd {margin: 0 0 5px 8em;padding-left: 1em;}
+.list-ss li{display: inline;border-right: 1px solid #bbb;padding-right: 7px;margin-right: 7px;}
+.list-ss li:last-child{border: none;}
+
+/* フォーム */
+.bottom{vertical-align: bottom;}
+.comment{width: 80%;max-width: 500px;}
+.btn, .btn-inline{background: transparent;border: 1px solid;}
+.btn-color{background: cadetblue;border: 1px solid #c3ebfa;color: #fff;border: none;}
+.btn-color:hover{opacity: 0.8;}
+.btn-inline{display: block;}
+.hensin{margin: 5px 0;list-style:none;padding:0;}
+.hensin li{display: inline;margin-right: 1.5em;}
+.kansou label{padding-right: 1em;}
+
+/* リンクページ */
+.link-bn{margin:15px 0;overflow:auto;}
+.link-bn dd{margin-left: 10px;padding: 5px 10px;border-left: 1px solid #bbb;}
+.link-bn img{max-width:100%}
+.link-text{list-style: circle;}
+.link-text a{margin-right: 1em;}
+.link-inline {padding-left: 0;}
+.link-inline li{display: inline;margin-right: 10px;}
+
+/* 折り畳みボックス */
+.acMenu dt{cursor:pointer;border-bottom: 2px solid cadetblue;display: inline-block;}
+.acMenu dd{display:none;margin-top: 10px;padding: 10px; background: rgba(95,158,160,0.2);}
+
+/* indexの白い部分 */
+.inner{background: #fff; margin: 0 auto 60px;padding: 20px}
+.inner:last-child{margin-bottom: 20px;}
+
+/* 展示ページの背景色 */
+.work{background: #f4f4f4;}
+/* 小説ページ */
+h1.novel{font-family:YuMincho, '游明朝', serif;text-align: center;font-size: 2.2rem;}
+.novel{font-size: 1.5rem;line-height: 2;}
+.afterword{margin-top: 120px;}
+/* 画像展示ページ */
+.img {text-align: center;}
+.img img{max-width: 100%;height: auto;margin: 60px auto;}
+/* ページ下部のメニュー */
+.local-nav {text-align: center;margin: 20px auto 0;padding: 0;}
+.local-nav li{display: inline;padding: 0 30px;}
+
+/* 装飾ボックス */
+.box{background: rgba(95,158,160,0.2);border-left: 2px solid; padding: 10px;}
+/* 著作権表示 */
+.copy, .copy a{text-align: center;}
+
+/* ============================================================
+   適用デバイス：タブレット(sm)・デスクトップ(md)・大画面デスクトップ(lg)
+   ============================================================ */
+@media all and (min-width: 768px) {
+.link-bn dt{float: left; max-width:200px;}
+.link-bn dd{margin-left: 210px;padding: 0 0 0 10px;}
+.btn-inline{display: inline;}
+.lastup{margin-left: 30px;display: inline;}
+}
+
+
+.grid-2col {display:grid; grid-template-columns:49% 49%; column-gap:20px;}
+.col-2 {column-count:2; column-gap: 22px;}
+.box a{background:rgba(95,158,160,0.3)}
+.box a:hover{background:rgba(95,158,160,0.5)}
+
+.l1::after{content:"　母語話者 Native Speaker"; color:crimson; font-size:0.8em}
+.l2::after{content:"　第二言語 Second Lang."; color:seagreen; font-size:0.8em}
+.l3::after{content:"　第三言語 Third Lang."; color:violet; font-size:0.8em}
+.learn::after{content:"　学習中 Learner"; color:dodgerblue; font-size:0.8em}
+
+.l1.noname::after{content:"母語話者 Native Speaker"}
+.l2.noname::after{content:"第二言語 Second Lang."}
+.l3.noname::after{content:"第三言語 Third Lang."}
+.learn.noname::after{content:"学習中 Learner"}
+
+.cat img, img.cat {
+  vertical-align:middle;
+  margin-top: -3px;
+  image-rendering: pixelated;}
+.cat > img{margin-left:1px}
+.cat a{padding: 2px 0; margin-left: 1px}
+
+#langbuttons {
+  position:fixed;
+  bottom:0; left:0;
+  padding:5px;
+  background:#ffffff80;
+  border-radius:0 6px 0 0}
+#langbuttons button {
+  color:#B33931;
+  background:#FFF;
+  border: #B33931 solid 2px;
+  font-weight:600;
+  font-size:16px;}
+
+.nocode::after, .oldcode::after{
+  color: #B33931;
+  border: #B33931 solid 1px;
+  border-radius:3px;
+  margin-left:2px;
+  padding:2px;
+  font-size:0.8em;}
+.nocode::after{content:'Add code please コード追加お願いします'}
+.oldcode::after{content:'Update needed コード更新お願いします'}
+
+small, .sm{font-size: .85em}
