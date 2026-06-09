@@ -30,7 +30,7 @@ Doctype: HTML, CSS
 Languages: English, Japanese
 Components: jQuery
 Software: Notion, VSCodium, Vivaldi browser, ImageOptim
-Hosts: Neocities, File Garden
-Last humans.txt update: 2026/01/04
+Hosts: Neocities, File Garden, GitHub
+Last humans.txt update: 2026/06/08
 
 https://humanstxt.org
