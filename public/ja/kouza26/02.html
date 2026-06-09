@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>②HTMLを打ってみよう【一から始めるちょき流HTML 2026】</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<header><h1>一から始める<span class="chk"><a href="/">ちょき</a>流</span>HTML 2026</h1></header>
+  <nav><ul>
+  <li><a href="./">トップページ</a>
+  <li><a href="01">①サイトの構造・ネオシ操作</a>
+  <li><a href="02">②HTMLを打ってみよう</a>
+  <li><a>③CSSを使ってみよう</a>
+  <li><a>④テンプレートについて</a>
+  <li><a>⑤一段階上へ</a>
+  <li><a>⑥更新の裏技</a>
+  <li><a>同人サイトTIPs一覧</a>
+  </ul></nav>
+<main><article>
+
+<section id="00">
+<h2>HTMLを打ってみよう</h2>
+<p>前回の「ネオシ操作」ではNeocitiesのアカウントを作り、サイトURLを確保できました。<br>
+  次は実際のコード打ちに移りますが、その前にHTMLコードの読み方を簡単に説明します。
+<hr>
+<p>HTMLは「タグ」と呼ばれるパーツでできていて、半角不等号の囲いが目印です。<br>
+  また、ほとんどのタグは括弧のように範囲を示すので、閉じる位置には半角スラッシュを挟んだものを置きます。<br>
+  例：<code>&lt;body>〜&lt;/body></code> <code>&lt;h1>〜&lt;/h1></code> <code>&lt;table>〜&lt;/table></code>
+<p>単体で使うタグ（閉じタグがなく、間に文字を挟めない物）もありますが、数はとても少ないです。<br>
+  普段使いするものは全て本ページで紹介します。<br>ちなみに、上下の横線装飾にある<code>&lt;hr></code>もその一つです。
+<p>また、タグには「属性」といった設定のようなものを追加することもできます。<br>
+  リンクを指定する<code>&lt;a></code>タグでは、<code>&lt;a href="(URL)"></code>という形でリンク先を指定します。また、同じタグに複数の属性を追加することができます。
+
+<hr>
+<p>それでは、早速HTMLを打ってみましょう。
+<p>Neocitiesファイル一覧に入っている<code>index.html</code>にカーソルをかざすと"Edit"（編集）ボタンが表示されるので、クリックしてファイルを開きます。<br>
+<p>HTMLファイルの構造は<code>&lt;head></code>と<code>&lt;body></code>の2つの部分に分かれているので、片方ずつ見ていきましょう。
+</section>
+
+<section id="00-1">
+<h3>ページ設定 &lt;head></h3>
+<p>備え付けのファイルにはこのようなコードが入っています。<br>
+  太字部分を除いたコードがページの内部設定になります。<br>
+  上から1行ずつ、追加・変更推奨部分も合わせて紹介します。
+<div class="scroll"><pre>
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;title>The web site of ichikara-test&lt;/title>
+    &lt;!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. --&gt;
+    &lt;link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  &lt;/head>
+  <b>&lt;body>
+    〜中略〜
+  &lt;/body></b>
+&lt;/html>
+</pre></div>
+
+<dl class="code">
+  <dt>&lt;!DOCTYPE html></dt>
+    <dd>「これはHTMLファイルだからHTMLコードのルールに則って表示してね〜」というブラウザに対する指示。<br>
+      必ず一番最初の行に置きます。閉じタグはありません。</dd>
+  <dt>&lt;html> &lt;/html></dt>
+    <dd>HTMLファイルの内容の全てを囲うタグ。<br>
+      <code>&lt;!DOCTYPE html></code>以外のものは全てこのタグの中に入れます。<br>
+      <div class="add">このタグに<code>lang</code>属性を追加すると、ページの言語が指定できます。視覚障害を持っている方が開いた時に正しい言語で読み上げられるようになるので、必ず入れるようにしましょう。<br>
+        日本語の場合は<code>&lt;html lang="ja"></code>、英語の場合は<code>"en-US"</code>や<code>"en-GB"</code>と記入してください。<a href="https://en.wikipedia.org/wiki/IETF_language_tag#List_of_common_primary_language_subtags" target="_blank">言語の一部リストはこちら</a>。</div></dd>
+  <dt>&lt;head> &lt;/head></dt>
+    <dd><code>&lt;html></code>の中に入る大きな2区分のうちの1つ。<br>
+      ブラウザ用の設定などを囲うタグ。ページを開いた時にはブラウザの画面に表示されません。</dd>
+  <dt>&lt;meta charset="UTF-8"></dt>
+    <dd>文字化けを防ぎます。<code>&lt;head></code>内の一番最初に入っていると安全です。<br>
+      ちなみに<code>&lt;meta></code>タグは全て閉じタグ不要です。</dd>
+  <dt>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"></dt>
+    <dd>デバイスごとに表示がいい感じに調整されます。<br>
+      これが無いとスマホで文字がちっちゃ〜くなったり、PCで特大になったりしてしまいます。</dd>
+  <dt>&lt;title> &lt;/title></dt>
+    <dd>ページのタイトル。<br>
+      ブラウザのタブに表示される部分なので、トップページの場合はサイトの名前、その他のページの場合は内容の見出しなどを入れるといいです。</dd>
+  <dt>&lt;!-- --&gt;</dt>
+    <dd>メモを指定するタグ。<code>&lt;head></code>内だけではなく、HTMLファイルのどの部分にも入れることができ、これで囲った内容はブラウザに全て無視されます。<br>
+      管理人は「ここ更新したらメニューの更新履歴も書くこと！」などといった自分に向けたリマインダーを入れることが多いです。<br>
+      Neocitiesのファイルにはstyle.cssのメモが入っていますね。これは次回の記事③で解説するので、このメモは消しても何も問題ありません。<br>
+      </dd>
+  <dt>&lt;link href="/style.css" rel="stylesheet" type="text/css" media="all"></dt>
+    <dd>前回の記事で紹介した、「ページの見た目を変えられる便利グッズ」のCSSファイルをこのタグで呼び出します。これも閉じタグはありません。<br>
+    使い方は後ほど解説するのでこの<code>&lt;link></code>はこのまま置いておきましょう。</dd>
+</dl>
+<p><mark>必須ではないが知っておくといいタグ：</mark>
+<dl class="code">
+  <dt>&lt;meta name="robots" content="noindex, nofollow"></dt>
+    <dd>検索避け用のタグ。GoogleやYahooなどのサーチエンジンにページが（なるべく）表示されなくなります。<br>
+      二次創作などの同人活動をする方はこれをrobots.txtと合わせて使うことを強く推奨します。詳しくは<a href="http://kensakuyoke.web.fc2.com/first.html" target="_blank">こちらのサイトをご覧ください</a>。本講座でも後ほど解説を用意します。</dd>
+</dl>
+
+<p>ここで紹介した内容と検索避けを合わせると、<code>&lt;/head></code>まではこのようなコードになります。
+<div class="scroll"><pre>
+&lt;!DOCTYPE html>
+&lt;html lang="ja">
+  &lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <b>&lt;meta name="robots" content="noindex, nofollow"></b>
+    &lt;title><b>ページのタイトル</b>&lt;/title>
+    &lt;link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  &lt;/head>
+</pre></div>
+<p>検索避けに関しては、導入するページとしないページを分ける使い方（トップページ以外の全ページに導入したり、サイトの中でも同人活動をしているページにのみ導入するなど）もあります。<br>
+  上記のコードはそのままコピペでOK。変更部分は検索避けを導入するかどうかとページタイトルのみで、他は基本的に全ページ共通です。
+</section>
+
+<section id="00-2">
+<h3>ページ内容 &lt;body></h3>
+<p>自動作成ファイルの続きを見てみましょう。<br>
+  ここからがブラウザで開いた時に表示される内容を指定するコードです。
+<p class="tip">編集画面で"Save"（保存）してから"View"（開く）をクリックするとページが別窓で表示され、いつでも見た目を確認できます。<br>
+  Viewボタンが表示されていない時（スマホなど）はページ一覧からファイル名をクリックすると開けます。<br>
+  ※変換が反映されない場合は Ctrl/⌘ + Shift + R（強制ページ更新）してみてください。
+
+<div class="scroll"><pre>
+  &lt;body>
+    &lt;h1>Welcome to my Website!&lt;/h1>
+
+    &lt;p>This is a paragraph! Here's how you make a link: &lt;a href="https://neocities.org">Neocities&lt;/a>.&lt;/p>
+
+    &lt;p>Here's how you can make &lt;strong>bold&lt;/strong> and &lt;em>italic&lt;/em> text.&lt;/p>
+
+    &lt;p>Here's how you can add an image:&lt;/p>
+    &lt;img src="/neocities.png" alt="Site hosted by Neocities">
+
+    &lt;p>Here's how to make a list:&lt;/p>
+
+    &lt;ul>
+      &lt;li>First thing&lt;/li>
+      &lt;li>Second thing&lt;/li>
+      &lt;li>Third thing&lt;/li>
+    &lt;/ul>
+
+    &lt;p>To learn more HTML/CSS, check out these &lt;a href="https://neocities.org/tutorials">tutorials&lt;/a>!&lt;/p>
+  &lt;/body>
+&lt;/html>
+</pre></div>
+
+<p>最後に<code>&lt;/html></code>を閉じることを忘れずに！
+
+<dl class="code">
+  <dt>&lt;body> &lt;/body></dt>
+    <dd><code>&lt;html></code>の中に入る大きな2区分の2つ目。<br>
+      実際にページに表示されるコンテンツを囲うタグ。</dd>
+  <dt>&lt;h1> &lt;/h1></dt>
+    <dd>aaaa</dd>
+  <dt>&lt;p> &lt;/p></dt>
+    <dd>aaaa</dd>
+  <dt>&lt;a href=""> &lt;/a></dt>
+    <dd>aaaa</dd>
+  <dt>&lt;strong> &lt;/strong></dt>
+    <dd>aaaa</dd>
+  <dt>&lt;em> &lt;/em></dt>
+    <dd>aaaa</dd>
+  <dt>&lt;img src=""></dt>
+    <dd>aaaa</dd>
+  <dt>&lt;ul> &lt;/ul></dt>
+    <dd>aaaa</dd>
+  <dt>&lt;li> &lt;/li></dt>
+    <dd>aaaa</dd>
+</dl>
+
+</section>
+
+<section id="01">
+<h2>他のファイルについて</h2>
+<p>text
+</section>
+
+<section id="upd">
+  <section id="clap">
+  <a href="//clap.fc2.com/post/cerealandchoccymilk/?url=https%3A%2F%2Fcerealandchoccymilk.neocities.org%2Fja%2Fkouza26%2F02&amp;title=kouza26%2F02" target="_blank" title="web拍手 by FC2"><img src="//clap.fc2.com/images/button/orange/cerealandchoccymilk?url=https%3A%2F%2Fcerealandchoccymilk.neocities.org%2Fja%2Fkouza26%2F02&amp;lang=ja" alt="web拍手 by FC2"></a>
+  </section>
+<h2>更新履歴</h2>
+<pre>
+2026.02.00 - </pre>
+</section>
+</article>
+
+<aside>
+<h3>目次</h3>
+<div><input type="checkbox" id="toc"><label for="toc"></label>
+  <menu>
+  <li><a href="#00">HTMLを打ってみよう</a>
+    <ul>
+    <li><a href="#00-1">ページ設定 &lt;head></a>
+    <li><a href="00-2">ページ内容 &lt;body></a></ul>
+  <li><a href="#01">他のファイルについて</a>
+  <li><a href="#upd">更新履歴</a>
+  </menu>
+</div></aside>
+<footer><a href="./"><img src="https://file.garden/ZbpUQD2lT2-4iaij/banner/kouza26.png" width="200" height="40" alt="「一から始めるちょき流HTML講座」バナー"></a></footer>
+</main>
+
+</body>
+</html>
