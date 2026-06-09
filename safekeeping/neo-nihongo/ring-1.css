@@ -1,0 +1,24 @@
+/* onionring.js is made up of four files - onionring-widget.js, onionring-index.js, onionring-variables.js and onionring.css (this one!)
+// it's licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html)
+// it was originally made by joey + mord of allium (蒜) house, last updated 2020-10-24 */
+
+/* === ONIONRING.CSS === */
+
+@import url('https://fonts.cdnfonts.com/css/nishiki-teki');
+
+#neo-nihongo{margin: 0 auto;
+  border: solid 1px;
+  display: inline-block;
+  padding:5px;
+  color: #B33931;
+  line-height:1.5;
+  text-align:center;
+  background-color: #ffffff;
+  font-family: 'nishiki-teki', 'Meiryo', sans-serif;
+  td{vertical-align:middle;}
+  .ring-main{padding: 0 5px}
+  table, tr, td{border:none;}
+}
+#neo-nihongo .notadded{
+  width:220px;
+}
