@@ -358,3 +358,6 @@ iframe{max-width:100%}
 
 .clap{text-align:center}
 .clap > .updates{margin-top:1em}
+
+.annt{cursor:help;
+  text-decoration:underline dotted 1px}
