@@ -160,9 +160,17 @@ details.tri[open], .tri details[open]{float:left}
   margin-top: -2px;
   margin-bottom: -2px;}
 
-div.sp {text-align:center;}
-.sp img, p.sp {border: 2px solid var(--red)}
-p.sp {padding:8px; width:max-content}
+.sp{border:1.5px solid var(--red);
+  display:block;
+  &:not(img){width:max-content;
+    padding:8px} }
+.sp, .spwrap{text-align:center;
+  margin:10px auto}
+.spwrap{display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:3px;
+  img{border:1.5px solid var(--red);} }
 
 #r18-hidden {display: none;}
 
@@ -227,6 +235,8 @@ button{
   .black{color:var(--black)}
 .bgwhite{background:#FFF}
   .white{color:#FFF}
+
+.clap img{vertical-align: middle; margin-top:-4px;}
 
 footer::before{content:"©cerealandchoccymilk 2022–2026"} /* change every year */
 

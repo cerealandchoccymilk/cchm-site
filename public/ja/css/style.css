@@ -263,8 +263,11 @@ padding:3px 0 3px 5px
 .textbox{
 border:1px dotted var(--black);
 margin:10px 0;
-padding:3px;
-text-align:center
+padding:5px 8px;
+text-align:center;
+  &.unwide{
+    width:fit-content;
+    margin-inline: auto}
 }
 .title{
 color:var(--grey1);
