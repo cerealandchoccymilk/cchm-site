@@ -53,8 +53,12 @@
   margin-top:10px;
   height:300px;
   resize:vertical;
-  > div{display:inline-block; vertical-align:middle; margin:7px} }
-#fanlistings img, #fanlistings > div, #doumei img{display:inline-block; vertical-align:middle; margin:2px}
+  padding:12px;
+  gap:12px;
+  > div{display:inline-block; vertical-align:middle} }
+#fanlistings > *, #doumei > *{display:inline-block; vertical-align:middle; margin:0}
+#fanlistings a, #doumei a {line-height:0}
+#fanlistings, #doumei {gap:3px}
 
 #webrings{
   #tmri{color:#000;
