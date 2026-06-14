@@ -279,9 +279,8 @@ column-gap:8px}
 .twitter-tweet-rendered{margin-right:auto;
   margin-left:auto}
 
-.buttonwall{display:flex; flex-flow:row wrap; align-items:center;
+.buttonwall{display:flex; flex-flow:row wrap; align-items:center; gap:5px;
   > * {display:inline-block;
-    margin:0 5px 5px 0;
     text-decoration:none !important;
     line-height:0} }
 
