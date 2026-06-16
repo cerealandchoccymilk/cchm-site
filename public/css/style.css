@@ -213,8 +213,7 @@ div.img {display:flex;
   flex-flow:row wrap;
   align-items:center;
   justify-content:center;
-  margin-top:5px}
-.img img {margin:0 2.5px 5px 2.5px}
+  margin:5px 0; gap:5px}
 
 .bgblue1{background:var(--blue1)}
   .blue1{color:var(--blue1)}
@@ -242,7 +241,7 @@ div.img {display:flex;
 .r-justified p{display:inline-block; text-align:left}
 .center{text-align:center}
 sup{font-size:x-small}
-audio{width:100%;margin:5px}
+audio{width:100%;margin:5px 0}
 summary{cursor:pointer}
 
 table.mytable,.mytable tr,.mytable td{border:solid 1px}
@@ -317,7 +316,6 @@ s, u, a{text-decoration-thickness:1px}
 #indexcontents {
   mark{line-height:2; font-weight:600}
   summary{padding-left:17px} }
-/* #indexcontents mark + details, #indexcontents ul{margin-top:0.5em} */
 
 
 @media screen and (max-width:850px){
