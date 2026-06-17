@@ -1,5 +1,5 @@
 .img3ds img{width:100%}
-@media (max-width: 600px) { .img3ds img{max-width:350px} }
+@media (max-width: 850px) { .img3ds img{max-width:350px} }
 
 .row > div:first-child{flex:45%; text-align:center}
 .row > div:last-child{flex:55%}

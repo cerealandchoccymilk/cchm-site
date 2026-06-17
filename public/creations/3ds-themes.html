@@ -8,13 +8,13 @@
     <script>
       function myFunction(id) {
         var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
+        if (x.className.indexOf("show") == -1) {
+          x.className += " show";
         } else { 
-          x.className = x.className.replace(" w3-show", "");
+          x.className = x.className.replace(" show", "");
         }
       }</script>
-    <style>.w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}</style>
+    <style>.hide{display:none!important}.show-block,.show{display:block!important}.show-inline-block{display:inline-block!important}</style>
 </head>
 <body>
   <div id="wrapper">
@@ -44,7 +44,7 @@
   </div>
   </div>
 <p><button onclick="myFunction('popuri-san-full')">Show full scrolling topscreen</button>
-<div id="popuri-san-full" class="w3-hide"><img src='3ds/popuri-san-full.png'></div>
+<div id="popuri-san-full" class="hide"><img src='3ds/popuri-san-full.png'></div>
 </section>
 
 <section id="clover">
@@ -63,7 +63,7 @@
   </div>
   </div>
 <p><button onclick="myFunction('clover-knight-full')">Show full scrolling topscreen</button>
-<div id="clover-knight-full" class="w3-hide"><img src='3ds/clover-knight-full.png'></div>
+<div id="clover-knight-full" class="hide"><img src='3ds/clover-knight-full.png'></div>
 </section>
 
 <section id="imawa2">
