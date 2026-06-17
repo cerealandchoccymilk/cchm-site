@@ -154,13 +154,13 @@ a.up::before{
 
 summary {cursor:pointer; text-indent:2px}
 
-details.tri[open], .tri details[open]{float:left}
+details.tri[open], .tri details[open]{float:left} /* what the hell is this??? */
 .tri summary {float: left;
   margin-right: 5px;
   margin-top: -2px;
   margin-bottom: -2px;}
 
-.sp{border:1.5px solid var(--red);
+.sp{border:1.5px solid var(--red); /* strawpage */
   display:block;
   &:not(img){width:max-content;
     padding:8px} }
@@ -174,12 +174,12 @@ details.tri[open], .tri details[open]{float:left}
 
 #r18-hidden {display: none;}
 
-.buttonwall{display:flex; flex-flow: row wrap; align-items:center;
+.buttonwall{display:flex; flex-flow:row wrap; align-items:center;
+  gap:3px 5px; margin-bottom:8px;
   > *{display:inline-block;
-    margin:0 5px 5px 0;
     text-decoration:none !important;
     line-height:0;
-    padding-bottom:1.5px} }
+    padding-bottom:2px} } /* maybe try to balance it out better for centering but idk its barely noticeable */
 .nobanner{display:table-cell;
   min-width:88px; height:31px;
   border:dashed var(--black) 1px; color:var(--black);
