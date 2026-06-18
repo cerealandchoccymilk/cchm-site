@@ -42,16 +42,12 @@ p{display: block;
 
 h3:first-child{margin-top:0}
 
-s, u{text-decoration-thickness: 1px;}
-
 nav i {position:absolute;
   top:10px; right:7px;
   text-shadow:none;}
 nav span i {position:absolute;
   top:10px; right:23px;
   text-shadow:none;}
-.pixelimg{image-rendering: pixelated;}
-.regimg{image-rendering: initial}
 
 ol{padding-left:20px;
   list-style-type:decimal-leading-zero;
@@ -67,15 +63,9 @@ ol{padding-left:20px;
     > ul{margin-top:5px !important; margin-bottom:5px !important}}
 }
 
-img {max-width:100%;height:auto}
-div.img {display: flex;
-  align-items: center;
-  justify-content: space-evenly;}
+div.img {justify-content: space-evenly;}
+.twitter-tweet p{text-indent:initial}
 
-.twitter-tweet p{text-indent:initial; text-align:center;}
-.twitter-tweet-rendered{margin-right:auto; margin-left:auto}
-
-sup{font-size:x-small;}
 .small, small{font-size:0.85em}
 
 table{table-layout:fixed;
@@ -143,10 +133,6 @@ details.cat>img, .cat details>img {margin-left:1px}
 .cat-g details div, div.cat-g {color: #00A97A; border: 1px #00A97A solid;}
 .cat-b details div, div.cat-b {color: #4152FF; border: 1px #4152FF solid;}
 
-.new::after{
-	content: url(/img/icon/new.gif);
-  margin-left: 3px;
-  image-rendering:pixelated;}
 a.up::before{
 	content: url(/img/icon/up.gif);
   margin-right: 3px;
@@ -174,33 +160,13 @@ details.tri[open], .tri details[open]{float:left} /* what the hell is this??? */
 
 #r18-hidden {display: none;}
 
-.buttonwall{display:flex; flex-flow:row wrap; align-items:center;
-  gap:3px 5px; margin-bottom:8px;
-  > *{display:inline-block;
-    text-decoration:none !important;
-    line-height:0;
-    padding-bottom:2px} } /* maybe try to balance it out better for centering but idk its barely noticeable */
-.nobanner{display:table-cell;
-  min-width:88px; height:31px;
-  border:dashed var(--black) 1px; color:var(--black);
-  font-size:8px; line-height:1.25;
-  font-family:'OfficalEmotes','MisakiGothic2nd';
-  text-align: center;
-  vertical-align: middle;
-  text-decoration:none !important}
-.b200{width:200px;height:40px;}
-.b88{width:88px;height:31px;}
-.b40auto{height:40px; width:fit-content; padding:0 15px}
+.buttonwall{gap:3px 5px; margin-bottom:8px;
+  > *{padding-bottom:2px} } /* maybe try to balance it out better for centering but idk its barely noticeable */
+.nobanner{
+  border:dashed var(--black) 1px;
+  color:var(--black)}
 
-.flash {filter: grayscale(1) contrast(0.3);
-  -webkit-filter: grayscale(1) contrast(0.3);}
-.bw {filter: grayscale(1);
-  -webkit-filter: grayscale(1)}
-.flash:hover, .bw:hover {filter: none;
-  -webkit-filter: none;}
-
-.annt{cursor:help;
-  text-decoration:underline dotted 1px}
+.annt{text-decoration-thickness:1px}
 
 button{
   color:#FFF;
@@ -213,13 +179,10 @@ button{
   background:var(--grey1)}
   &:active{opacity:0.5} }
 
-.updates{overflow-y:auto;
+.updates{
   background:#FFF;
   border:solid 1px var(--black);
-  padding:3px;
   height:150px;
-  width:100%;
-  resize:both;
   &.short{height:100px}
   hr{margin:0.5em 0} }
 

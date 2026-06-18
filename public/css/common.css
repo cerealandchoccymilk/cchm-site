@@ -1,0 +1,99 @@
+sup, sub{font-size:x-small}
+.updates{
+  overflow-y:auto;
+  padding:3px;
+  width:100%;
+  resize:both;
+}
+.textbox{
+  text-align:center;
+  padding:5px 8px;
+  &.unwide{
+    width:fit-content;
+    margin-inline: auto}
+}
+img {max-width:100%;height:auto}
+div.img {
+  display:flex;
+  flex-flow:row wrap;
+  align-items:center;
+  margin:5px 0; gap:5px;
+  & img{display:block} /* check if good for all or just en */
+}
+.pixelimg{image-rendering:pixelated}
+.regimg{image-rendering:initial}
+.annt{
+  cursor:help;
+  text-decoration-line:underline;
+  text-decoration-style:dotted
+}
+.r-float{display:block; float:right}
+.r-just{text-align:right}
+.r-justified p{display:inline-block; text-align:left}
+.center{text-align:center}
+audio{width:100%;margin:5px 0}
+summary{cursor:pointer}
+/*
+table.mytable, .mytable tr, .mytable td {border:solid 1px}
+.mytable td {padding:3px 6px}
+*/
+#twitter-widget-0 {width:unset !important}
+.twitter-tweet p{
+  text-align:center;
+  border:solid 1px;
+  padding:8px
+}
+.twitter-tweet-rendered{
+  margin-right:auto;
+  margin-left:auto
+}
+
+.buttonwall{
+  display:flex;
+  flex-flow:row wrap;
+  align-items:center;
+  gap:5px;
+  > * {display:inline-block;
+    text-decoration:none !important;
+    line-height:0
+  }
+}
+
+.nobanner{
+  display:table-cell;
+  min-width:88px;
+  height:31px;
+  border:dashed #000 1px;
+  color:#000;
+  font-size:8px;
+  font-family:'OfficalEmotes','MisakiGothic2nd';
+  text-align:center;
+  vertical-align:middle;
+  line-height:1.25;
+  text-decoration:none /*important?*/
+}
+.b200{width:200px; height:40px}
+.b88{width:88px; height:31px}
+.b40auto{height:40px; width:fit-content; padding:0 15px}
+
+.flash {filter:grayscale(1) contrast(0.3);
+  -webkit-filter:grayscale(1) contrast(0.3)}
+.bw {filter:grayscale(1);
+  -webkit-filter:grayscale(1)}
+.flash:hover, .bw:hover {filter:none;
+  -webkit-filter:none}
+
+s, u, a{text-decoration-thickness:1px}
+
+
+.new, .up{
+  &::after {margin-left: 3px;
+  image-rendering:pixelated}
+}
+.new::after{content: url(/img/icon/new.gif);}
+.up::after{content: url(/img/icon/up.gif);}
+
+a.up::before{
+	content: url(/img/icon/up.gif);
+  margin-right: 3px;
+  image-rendering:pixelated;}
