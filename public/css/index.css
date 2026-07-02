@@ -65,10 +65,11 @@
     span a{display:initial; margin:0; border-bottom:none; line-height:initial} }
   #autiring{width:fit-content; text-align:center; font-size:0.9em;
     a:first-child, a:last-child{padding:0.1em} }
-  #aperturewebring{padding:0}
-  #sogma{padding:0;
+  #aperturewebring{padding:0; margin:0}
+  #sogma{padding:0; margin:0;
     table tr td{padding:5px} }
-  #dsring{padding: 15px}
+  #dsring{padding:15px; margin:0}
+  #vocaring{margin:0}
   #yaoiring{display:grid;
     background-image:
       linear-gradient(to top,#000,#00000000),
@@ -79,8 +80,11 @@
     font-family:'Times New Roman'; font-size:18px;
     span{display:inline-block; align-self:end; justify-self:center; text-align:center}
     a{text-decoration:none; color:#fff} }
-  #OtakuRing{padding:0;
+  #OtakuRing{padding:0; margin:0;
     img{height:60px} }
+  #webmasteringbtn{margin:0}
+  & > .textbox{margin:0}
+  .singleimg a > img {display:block}
 }
 
 #links input{width:200px}
