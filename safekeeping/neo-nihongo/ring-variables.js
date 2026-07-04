@@ -26,7 +26,7 @@ var sites = [
 'https://mimineko12.neocities.org/',
 'https://stillnessgraveyard.neocities.org/',
 'https://www.milk-tea.email/',
-// 'https://www.bluepuffin.net/', 旧コード+移転閉鎖
+// 'https://www.bluepuffin.net/', 旧コード+移転+閉鎖
 'https://smokoswebzone.gay/',
 'https://bokuwatetsuo.net/',
 'https://scrapsite.nekoweb.org/',
@@ -37,11 +37,11 @@ var sites = [
 'https://karasushima.neocities.org/',
 'https://claranguyen.me/',
 'https://demgoze.nya.je/',
-'https://takotako.neocities.org/',
+// 'https://takotako.neocities.org/', コードなし
 'https://watakoii-chiquitoblog.neocities.org/',
 'https://mynekosworld.neocities.org/',
 'https://angeleyesprings.neocities.org/',
-'https://likematches.neocities.org/',
+// 'https://likematches.neocities.org/', コードなし
 'https://kwaamfan.haliya.net/',
 'https://indietsushin.net/',
 'https://arriana.nekoweb.org/',
