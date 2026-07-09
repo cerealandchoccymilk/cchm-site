@@ -49,7 +49,8 @@ var sites = [
 'https://thenamelessarchiv3.neocities.org',
 'https://ponzu-ra-yu.neocities.org/',
 'https://veronika.skin',
-'https://skyrocket.neocities.org/'
+'https://skyrocket.neocities.org/',
+'https://imepixds.neocities.org'
 ];
 
 //the name of the ring
