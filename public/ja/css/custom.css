@@ -147,10 +147,14 @@ details.cat>img, .cat details>img {margin-left:1px}
 	content: url(/img/icon/new.gif);
   margin-left: 3px;
   image-rendering:pixelated;}
-a.up::before{
+.up::after{
+	content: url(/img/icon/up.gif);
+  margin-left: 3px;
+  image-rendering:pixelated;}
+/* a.up::before{
 	content: url(/img/icon/up.gif);
   margin-right: 3px;
-  image-rendering:pixelated;}
+  image-rendering:pixelated;} */
 
 summary {cursor:pointer; text-indent:2px}
 

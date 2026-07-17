@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <title>🌟隔離（メニュー）</title>
+    <link rel="stylesheet" href="/ja/css/rose.css" type="text/css">
+    <style>
+      #topmenu{display:grid; grid-template-columns: auto 1fr; gap:20px}
+      #copy{position:fixed; right:6px; bottom:4px;
+        text-align:right; font-size:0.8em;}
+      .title{ /* https://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/ */
+        display:flex; align-items:center; justify-content:center; text-align: center;
+        bottom: 0; top: 0; left: 0; right: 0;
+        height: auto; width: auto; margin: auto;
+        position: absolute; z-index:-1;}
+      h2{margin:0; line-height:0; font-size: 1.5em;}
+      .itemname a:hover::after{position: absolute;
+        top:12px; left:85px;
+        content: "【" attr(title) "】"; 
+        color:#666; font-size:0.85em}
+    </style>
+  <base target="_top">
+  </head>
+<body id="menu">
+
+<div class="title">
+  <h2>隔離</h2>
+</div>
+<div>
+  <div class="itemname">
+    <a href="index" title="画面を初期化する">reset</a> /
+    <a href="/ja/kirby" title="星kbページに戻る">back</a>
+  </div>
+  <div>
+    <img src="/img/icon/new.gif" class="cat"> 新規投稿　<img src="/img/icon/up.gif" class="cat"> 更新
+  </div>
+</div>
+<div id="copy">
+Template: <a href="https://klee.mypace.net" target="_blank">klee</a><br>
+Icon: <a href="https://nanos.jp/phantom0" target="_blank">phantom</a>,
+  <a href="https://foollovers.com" target="_blank">foollovers</a>,
+  <a href="https://www.webcitron.com" target="_blank">web*citron</a>
+</div>
+
+</body>
+</html>
