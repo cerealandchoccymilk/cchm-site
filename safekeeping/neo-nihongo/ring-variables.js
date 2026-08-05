@@ -50,7 +50,8 @@ var sites = [
 'https://ponzu-ra-yu.neocities.org/',
 'https://veronika.skin',
 'https://skyrocket.neocities.org/',
-'https://imepixds.neocities.org'
+// 'https://imepixds.neocities.org', コードなし
+'https://gikaayumi.nekoweb.org/'
 ];
 
 //the name of the ring
