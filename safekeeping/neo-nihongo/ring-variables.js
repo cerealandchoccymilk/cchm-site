@@ -51,7 +51,10 @@ var sites = [
 'https://veronika.skin',
 'https://skyrocket.neocities.org/',
 // 'https://imepixds.neocities.org', コードなし
-'https://gikaayumi.nekoweb.org/'
+'https://gikaayumi.nekoweb.org/',
+'https://millennium-whoop.github.io/aetherway/',
+'https://sepelathons.neocities.org/',
+'https://straylove.nekoweb.org/'
 ];
 
 //the name of the ring
