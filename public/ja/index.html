@@ -26,7 +26,7 @@
 <p>日本語コンテンツの置き場です。<br>
    ちょっとした文章とか、なんか楽しいこととか、一次・二次創作とか。<br>
    二次創作は、全てにおいて公式とは一切関係ありません。検索避け済みです。
-<p>あなたは<em><span id="hitcount">n</span>番目の訪問者</em>です！<small>（※正確さは不明）</small>
+<!-- <p>あなたは<em><span id="hitcount">n</span>番目の訪問者</em>です！<small>（※正確さは不明）</small> -->
 <p class="clap">
 <!-- FC2拍手タグここから -->
 <a href="//clap.fc2.com/post/cerealandchoccymilk/?url=https%3A%2F%2Fcerealandchoccymilk.neocities.org%2Fja&amp;title=%E4%B8%AD%E5%BA%AD" target="_blank" title="web拍手 by FC2"><img src="//clap.fc2.com/images/button/red/cerealandchoccymilk?url=https%3A%2F%2Fcerealandchoccymilk.neocities.org%2Fja&amp;lang=ja" alt="web拍手 by FC2"></a>
@@ -35,7 +35,8 @@
 
 <h3><span>ひとことステータス</span></h3>
 <div class="updates short">
-2026.08.10 - 最近丸亀製麺MADと音割れモモンガアフレコのことしか考えてない。<hr>
+2026.08.16 - Neocities訪問者カウンターが動かなくなったので撤去。今までありがとな……。<hr>
+2026.08.10 - 最近丸亀製麺MADと音割れモモンガアフレコのことしか考えてない。<br>
 2026.06.12 - VSCodiumで全て管理してるから一括Find&Replaceでメニューを更新できることに気付いた！今はもう遅いけど明日（今日）起きたらやろう。これは革新的。追記：起きた。1秒で完了<br>
 2026.06.10 - 急に大幅更新して読者を怖がらせましょう！！内部をGitHubに移行して更新がだいぶ楽になりました。絵も結構追加できて良い日だった。<br>
 2026.06.07 - 更新が停滞してしまってる。久しぶりにバックアップも取ったことだし、この機会に中庭の構造も一新していいんじゃないかと思ったり。環境をリフレッシュして更新の気力を取り戻す作戦。Linux導入感想ブログ書きたい！あとHTML講座もいい加減に更新したい！17776和訳で得たgitのスキルをサイト更新に活かすのもいいかも。<br>
@@ -230,7 +231,7 @@
 
 <h2><span>N</span>ews</h2>
 <div class='updates'>
-2026.08.16 kb隔離+1<br>
+2026.08.16 kb隔離+1 お返事+1、訪問者カウンター撤去<br>
 2026.08.10 art+4、サイドメニュー微更新<br>
 2026.08.07 kb隔離更新<br>
 2026.07.16 art+2、kb隔離更新<br>
@@ -322,16 +323,5 @@
   <a href="#" id="pagetop">top</a><!-- ページトップに戻る -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/ja/js/jquery.toggle.js"></script>
-<script>
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var site_data = JSON.parse(this.responseText);
-      document.getElementById("hitcount").innerHTML = site_data.info.views;
-    }
-  };
-  xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=cerealandchoccymilk", true);
-  xhttp.send();
-</script><!--https://dannarchy.com/tut/tut_002-->
 </body>
 </html>
