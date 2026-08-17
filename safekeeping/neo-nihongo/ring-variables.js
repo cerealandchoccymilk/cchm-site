@@ -16,7 +16,7 @@ var sites = [
 'https://pastel-skies.nekoweb.org/',
 'https://jsaniken.neocities.org/',
 'https://renyoi.neocities.org/',
-'https://bacteryy2019.neocities.org/',
+'https://baqqure2.neocities.org',
 'https://yuinoid.neocities.org/',
 // 'https://agoworld.neocities.org/',
 // 'https://fuwafuwablogging.neocities.org/', 閉鎖
