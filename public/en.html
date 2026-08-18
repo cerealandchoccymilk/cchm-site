@@ -15,7 +15,7 @@
 
 <article id='intro'>
 <h2>Intro</h2>
-<p>hello, visitor <em>#<span id="hitcount">n</span></em>!<br>
+<p>hello!<br>
    please take a seat, have a beverage and a snack, and take your time looking around!
 <p><mark>don't know where to start?</mark> try checking out the <a href='sitemap'>sitemap</a> to see what my site has to offer!
 <p>the usage of content on this site for AI machine learning is prohibited under any circumstances.<br>
@@ -35,9 +35,13 @@
 </div>
 <p><em>Name:</em> Choccy / ちょき<br>
    <em>Pronouns:</em> He/it<br>
-   <em>Listening to:</em> 震え星 - Sakuta Suisei<br>
+   <em>Listening to:</em><br>
+   ・<a href="https://www.youtube.com/watch?v=Rq65VlRhvMs" target="_blank">Happy End</a> - back number<br>
+   ・<a href="https://www.youtube.com/watch?v=OHAjc-ayhus" target="_blank">Bubble</a> - Yorushika<br>
    <em>Drawing:</em> Kirby gijinka (of course)<br>
-   <em>Playing:</em> Limbus Company, Deltarune Ch5<br>
+   <em>Playing:</em><br>
+   ・Limbus Company<br>
+   ・Lobotomy Corporation<br>
    <em>Reading:</em> Duel Masters LOST
 </div>
 </section>
@@ -46,6 +50,8 @@
 <article id='updates'>
 <h2>Updates</h2>
 <dl>
+<dt>2026.08.17</dt>
+  <dd>Removed unfunctional Neocities hit counter :( + added a few banners</dd>
 <dt>2026.08.16</dt>
   <dd>中庭 update (kirby gijinka meme)</dd>
 <dt>2026.08.07</dt>
@@ -56,10 +62,6 @@
   <dd>中庭 update (misc art, gijinka page tweaks)</dd>
 <dt>2026.06.12</dt>
   <dd>中庭 update (tons of miscellaneous art, some kirby doodles, webclap response)</dd>
-<dt>2026.06.10</dt>
-  <dd>中庭 update (lots of kirby gijinka)</dd>
-<dt>2026.06.08</dt>
-  <dd>New bog post, tidied up some places</dd>
 <dt>All</dt>
   <dd>Update history linked <a href='history'>here</a></dd>
 </dl>
@@ -191,6 +193,7 @@ speak japanese? join my webring!<br>
   <div class='textbox'><a href="https://pkmn.aquarel.nu" target='_blank'>I Choose You!</a> <img src="img/fl/absol.png"> Absol</div>
 </section>
 <section id='doumei' class='pixelimg'>
+  <a href='https://tedukuri.web.fc2.com' target='_blank'><img src='/img/doumei/noai-88.png' alt='生成AI不使用同盟' title='生成AI不使用同盟' class="regimg"></a>
   <a href='https://flanet.web.fc2.com/union/site_enjoy' target='_blank'><img src='/img/doumei/reiwa-site.gif' alt='令和も個人サイト楽しみ隊' title='令和も個人サイト楽しみ隊'></a>
   <a href='https://gedounohakarai.lsv.jp/doumei/sitecustom-omoroi' target='_blank'><img src='/img/doumei/omoroi.png' alt='サイトカスタムおもろい！' title='サイトカスタムおもろい！' class='regimg'></a>
   <a href='https://unionmatome.web.fc2.com/jikoman' target='_blank'><img src='/img/doumei/jikoman.gif' alt='自己満足で運営中' title='自己満足で運営中'></a>
@@ -448,22 +451,5 @@ speak japanese? join my webring!<br>
 <script src="/js/jquery.toggle.js"></script>
 <script src="/js/jquery.breadcrumb.js"></script>
 <script>$("div.menu").load("menu.html");</script>
-<script>
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var site_data = JSON.parse(this.responseText);
-      var num_arr = site_data.info.views.toString().split("");
-      var num_str = "";
-      for (i = 0; i < num_arr.length; i++) {
-        num_str += num_arr[i];
-        if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
-      }
-      document.getElementById("hitcount").innerHTML = num_str;
-    }
-  };
-  xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=cerealandchoccymilk", true);
-  xhttp.send();
-</script><!--https://dannarchy.com/tut/tut_002-->
 </body>
 </html>
