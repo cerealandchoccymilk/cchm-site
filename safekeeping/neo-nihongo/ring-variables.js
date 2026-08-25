@@ -48,7 +48,7 @@ var sites = [
 'https://kaede010.neocities.org/',
 'https://thenamelessarchiv3.neocities.org',
 'https://ponzu-ra-yu.neocities.org/',
-'https://veronika.skin',
+'https://horse.jp.net/',
 'https://skyrocket.neocities.org/',
 // 'https://imepixds.neocities.org', コードなし
 'https://gikaayumi.nekoweb.org/',
