@@ -55,7 +55,8 @@ var sites = [
 'https://millennium-whoop.github.io/aetherway/',
 'https://sepelathons.neocities.org/',
 'https://straylove.nekoweb.org/',
-'https://aquamiki.neocities.org/'
+'https://aquamiki.neocities.org/',
+'https://luc4jp.neocities.org/'
 ];
 
 //the name of the ring
