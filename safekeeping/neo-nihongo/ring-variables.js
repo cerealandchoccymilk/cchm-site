@@ -56,7 +56,8 @@ var sites = [
 'https://sepelathons.neocities.org/',
 'https://straylove.nekoweb.org/',
 'https://aquamiki.neocities.org/',
-'https://www.infinityweavers.link/'
+'https://www.infinityweavers.link/',
+'https://rnanodesu.nekoweb.org/'
 ];
 
 //the name of the ring
