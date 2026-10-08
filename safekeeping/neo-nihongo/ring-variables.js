@@ -61,6 +61,8 @@ var sites = [
 'https://rnanodesu.nekoweb.org/'
 ];
 
+// remember to upload to filegarden idiot
+
 //the name of the ring
 var ringName = 'ネオ日本語ウェブリング';
 
