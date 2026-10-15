@@ -58,7 +58,9 @@ var sites = [
 'https://aquamiki.neocities.org/',
 'https://luc4jp.neocities.org/',
 'https://www.infinityweavers.link/',
-'https://rnanodesu.nekoweb.org/'
+'https://rnanodesu.nekoweb.org/',
+'https://aozzz.blogspot.com/',
+'https://halkittymilk0419.neocities.org/'
 ];
 
 // remember to upload to filegarden idiot
